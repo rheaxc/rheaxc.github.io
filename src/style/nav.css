@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #f1dbb6;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar-item {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  flex-direction: row;
+}
+
+.navbar-container {
+    display: flex;
+}
+
+img {
+    margin-left: 0.5vw;
+}
+
+h3 {
+    margin: 0px 0.5vw;
+}
