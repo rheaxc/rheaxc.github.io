@@ -1,29 +1,35 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import FAQ from "./components/FAQ";
 import Members from "./components/Members";
 import Rush from "./components/Rush";
 
 import './style/App.css';
+import HomePage from "./components/HomePage";
 
 
 function App() {
   return (
-      <div className="theta tau theta gamma">
-        <header className="App-header">
-          here is a lil example home page
-        </header>
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/members" component = { <Members />} />
-            </Routes>
-        </BrowserRouter>
+    <React.Fragment>
+        <Router>
+          <div className="content-wrapper" >
+           <Navbar /> 
+              <Routes>
+                
+                <Route path="/homepage" element={<HomePage />}/>
 
-        heads up: the nav bar doesn't work - will fix later
-      </div>
+                <Route path="/members" element={<Members />}/>
+                
+                <Route path="/rush" element={<Rush />}/>
+                
+                <Route path="/faq" element={<FAQ/>}/>
+
+              </Routes>
+          </div>
+        </Router>
+    </React.Fragment>
   );
 }
 
