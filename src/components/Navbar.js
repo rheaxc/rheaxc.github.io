@@ -29,6 +29,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="navbar-item">
+              <Link to= "/alumni">
+                Alumni
+              </Link>
+            </li>
+            <li className="navbar-item">
               <Link to= "/faq">
                 FAQ
               </Link>
