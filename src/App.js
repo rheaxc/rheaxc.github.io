@@ -8,7 +8,6 @@ import Rush from "./components/Rush";
 
 import './style/App.css';
 import HomePage from "./components/HomePage";
-import Alumni from "./components/Alumni";
 
 
 function App() {
@@ -24,8 +23,6 @@ function App() {
                 <Route path="/members" element={<Members />}/>
                 
                 <Route path="/rush" element={<Rush />}/>
-
-                <Route path="/alumni" element={<Alumni />}/>
                 
                 <Route path="/faq" element={<FAQ/>}/>
 
