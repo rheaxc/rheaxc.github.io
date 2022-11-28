@@ -67,6 +67,17 @@ class Alum extends React.Component {
         pc: 'pc name',
         alumImage: 'alumni/Hari.JPG',
       },
+      {
+        name: 'name2',
+        gradyear: '2021',
+        major: 'CS',
+        company: 'company',
+        companyurl: 'https://www.meta.com/',
+        position: 'position',
+        description: 'description',
+        pc: 'pc name',
+        alumImage: 'alumni/Hari.JPG',
+      },
     ]
     const list2 = data2.map((alumni) => (
       <AlumInfo
