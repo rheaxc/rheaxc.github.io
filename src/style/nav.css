@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #f1dbb6;
+  background-color: #f1dbb6;
 }
 
 li {
@@ -12,15 +12,15 @@ li {
 }
 
 .navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 img {
-    margin-left: 0.5vw;
+  margin-left: 0.5vw;
 }
 
 h3 {
-    margin: 0px 0.5vw;
+  margin: 0px 0.5vw;
 }

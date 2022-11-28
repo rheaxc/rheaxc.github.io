@@ -1,0 +1,17 @@
+[
+  {
+    "url": "www.company1.com",
+    "name": "company1",
+    "imagePath": "/path/to/image1"
+  },
+  {
+    "url": "www.company2.com",
+    "name": "company2",
+    "imagePath": "/path/to/image2"
+  },
+  {
+    "url": "www.company3.com",
+    "name": "company3",
+    "imagePath": "/path/to/image3"
+  }
+]
