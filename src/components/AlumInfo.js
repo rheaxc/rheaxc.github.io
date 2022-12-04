@@ -9,24 +9,29 @@ class AlumInfo extends React.Component {
   render() {
     return (
       <div>
-        <div className="Alum Name">
+        <div className="AlumInfo">
           <h2> {this.props.name}</h2>
-          <img src={this.props.alumImage} height="400" />
-          <h4> Grad Year: {this.props.gradyear}</h4>
-          <h4> Pledge Class: {this.props.pc}</h4>
-          <h4> Major: {this.props.major}</h4>
+          <img src={this.props.alumImage} height="300" />
+          <p> Grad Year: {this.props.gradyear}</p>
+          <p> Pledge Class: {this.props.pc}</p>
+          <p> Major: {this.props.major}</p>
           <a href={this.props.companyurl}>
-            <h4> Company: {this.props.company}</h4>
+            <p> Company: {this.props.company}</p>
           </a>
-          <h4> Position: {this.props.position}</h4>
-          <h4>
+          <p> Position: {this.props.position}</p>
+          <p>
             {' '}
             About {this.props.name}: {this.props.description}
-          </h4>
+          </p>
         </div>
       </div>
+      //hari
     )
   }
 }
+
+
+
+
 
 export default AlumInfo

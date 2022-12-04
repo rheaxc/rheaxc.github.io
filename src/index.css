@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.AlumInfo {
+  border: 1px solid rgb(253, 212, 79);
+  height: 750px;
+  margin-top: 20px;
+  width: 450px;
+  float: left;
+  background-color: rgb(253, 212, 79);
+  margin-left: 32px;
+  border-radius: 10px;
+}
+
+.thesealum {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.companies {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.alumHead {
+  margin-top: 100px;
+}
