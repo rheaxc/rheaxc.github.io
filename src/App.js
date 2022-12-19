@@ -14,16 +14,16 @@ function App() {
   return (
     <React.Fragment>
         <Router>
-          <div className="content-wrapper" >
-           <Navbar /> 
+          <div className="content-wrapper">
+           <Navbar />
               <Routes>
-                
+
                 <Route path="/homepage" element={<HomePage />}/>
 
                 <Route path="/members" element={<Members />}/>
-                
+
                 <Route path="/rush" element={<Rush />}/>
-                
+
                 <Route path="/faq" element={<FAQ/>}/>
 
               </Routes>

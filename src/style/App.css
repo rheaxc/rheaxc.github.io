@@ -1,17 +1,16 @@
+.red {
+  color: #883a3a;
+}
+.gold {
+  color: #f1dbb6;
+}
+
 html {
     background-color: #white;
     font-family: Helvetica, Arial, sans-serif;
     overflow-x: hidden;
-    text-align: center;
-    background-color: #883a3a;
-}
-
-header {
-  color: white;
-  font-weight: bold;
-  padding-bottom: 1%;
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 1%;
 }
