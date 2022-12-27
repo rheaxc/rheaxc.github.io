@@ -4,6 +4,7 @@
 }
 #about-us-text-container{
   width: 40%;
+  font-size: 20px;
 }
 #about-us-image{
   max-width: 100%;
@@ -20,4 +21,9 @@
     flex-direction: row;
     justify-content: space-around;
     padding-right: 1%;
+    padding-top: 3%;
+}
+
+#about-us-text{
+
 }

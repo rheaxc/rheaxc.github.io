@@ -7,9 +7,7 @@ import Intro from './homepage/Intro.js'
 import Brotherhood from './homepage/Brotherhood.js'
 import Service from './homepage/Service.js'
 import Professional from './homepage/Professional.js'
-
-
-// TODO: the spacing & size of things is whack
+import JoinUs from './homepage/JoinUs.js'
 
 class HomePage extends React.Component {
   constructor() {
@@ -19,7 +17,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="homepage">
-        <div clas = "header">
+        <div class = "header">
           <h1 class= "red title">
               THETA TAU THETA GAMMA
           </h1>
@@ -31,6 +29,7 @@ class HomePage extends React.Component {
           <Service />
           <Professional />
         </div>
+        <JoinUs />
       </div>
     );
   }

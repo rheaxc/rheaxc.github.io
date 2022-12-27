@@ -10,14 +10,19 @@
 }
 
 .intro{
+  font-size: 40px;
+  font-weight: bold;
+}
+.umich{
+  text-align: center;
   font-size: 2em;
-  font-weight:bold;
 }
 
 
  /* this is the style to keep pillars uniform */
 .pillar-item{
-  padding-top: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -25,6 +30,7 @@
 .pillar-title{
   font-size: 4em;
   font-weight: bold;
+  font-family: monospace;
   padding-left: 3%;
   padding-right: 3%;
 }

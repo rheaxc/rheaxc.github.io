@@ -1,12 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../style/nav.css";
+import logo from "../images/tht-logo.png";
 
 export default function Navbar() {
 
     return (
-      <div className= "navbar">
-        <div className = "navbar-container  d-flex flex-wrap">
+      <div className= "navigation">
+        <div className = "logo">
+          <div class = "image"> 
+           <img src = {logo} alt = "tht"/>
+          </div>
+          <p class = "umich"> university of michigan </p>
+        </div>
+        <div className = "nav-container">
           <li className = "navbar-item">
             <Link to= "/">
               Home

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./style/brotherhood.css"
+import "./style/service.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FastMarquee from 'react-fast-marquee';
 
@@ -19,29 +19,31 @@ const Service = () => {
 
   return (
     <div class="pillar-item">
-      <div class="pillar-title brotherhood-title">
-        Service
+      <div class="pillar-title service-title">
+        SERVICE
       </div>
       <FastMarquee
         speed={60}
         delay={0}
         pauseOnHover
+        gradient={false}
         direction="righ"
         class = "marquee"
         >
         {firstrow.map((image) => (
-          <img src={image} alt="brohood" class="img"></img>
+          <img src={image} alt="service" class="img"></img>
         ))}
       </FastMarquee>
       <FastMarquee
         speed={60}
         delay={0}
         pauseOnHover
+        gradient={false}
         direction="le"
         class = "marquee"
         >
         {secondrow.map((image) => (
-          <img src={image} alt="brohood" class="img"></img>
+          <img src={image} alt="service" class="img"></img>
         ))}
       </FastMarquee>
       </div>
