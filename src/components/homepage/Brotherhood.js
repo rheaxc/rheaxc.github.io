@@ -1,5 +1,6 @@
 import React from 'react';
 import './style/brotherhood.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // TODO: LMAO MAKE THIS WAY PRETTIER W BOOTSTRAP
 
@@ -20,31 +21,15 @@ class Brotherhood extends React.Component {
           <div class = "pillar-title brotherhood-title">
             Brotherhood
           </div>
-          <div class = "pillar-images brotherhood-image-container">
-            <div class = "img-container-item">
-              <img src={image1} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image2} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image3} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image4} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image5} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image6} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image7} alt="brohood"></img>
-            </div>
-            <div class = "img-container-item">
-              <img src={image8} alt="brohood"></img>
-            </div>
+          <div class="brotherhood-images  d-flex flex-wrap">
+            <img src={image1} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image2} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image3} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image4} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image5} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image6} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image7} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
+            <img src={image8} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
           </div>
         </div>
     );
