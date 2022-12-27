@@ -6,7 +6,7 @@ export default function Navbar() {
 
     return (
       <div className= "navbar">
-        <div className = "navbar-container">
+        <div className = "navbar-container  d-flex flex-wrap">
           <li className = "navbar-item">
             <Link to= "/">
               Home

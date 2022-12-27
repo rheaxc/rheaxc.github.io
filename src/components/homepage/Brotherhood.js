@@ -1,39 +1,51 @@
-import React from 'react';
-import './style/brotherhood.css'
+import React, { useState } from 'react';
+import "./style/brotherhood.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// TODO: LMAO MAKE THIS WAY PRETTIER W BOOTSTRAP
+import FastMarquee from 'react-fast-marquee';
 
 // brotherhood images are here:
-import image1 from '../../images/homepage/brotherhood/1.jpg'
-import image2 from '../../images/homepage/brotherhood/9.jpg'
-import image3 from '../../images/homepage/brotherhood/3.jpg'
-import image4 from '../../images/homepage/brotherhood/4.jpg'
-import image5 from '../../images/homepage/brotherhood/5.jpg'
-import image6 from '../../images/homepage/brotherhood/6.jpg'
-import image7 from '../../images/homepage/brotherhood/7.jpg'
-import image8 from '../../images/homepage/brotherhood/8.jpg'
+import image1 from '../../images/homepage/brotherhood/1.jpg';
+import image2 from '../../images/homepage/brotherhood/9.jpg';
+import image3 from '../../images/homepage/brotherhood/3.jpg';
+import image4 from '../../images/homepage/brotherhood/4.jpg';
+import image5 from '../../images/homepage/brotherhood/5.jpg';
+import image6 from '../../images/homepage/brotherhood/6.jpg';
+import image7 from '../../images/homepage/brotherhood/7.jpg';
+import image8 from '../../images/homepage/brotherhood/8.jpg';
 
-class Brotherhood extends React.Component {
-  render() {
-    return (
-        <div class = "pillar-item">
-          <div class = "pillar-title brotherhood-title">
-            Brotherhood
-          </div>
-          <div class="brotherhood-images  d-flex flex-wrap">
-            <img src={image1} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image2} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image3} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image4} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image5} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image6} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image7} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-            <img src={image8} alt="brohood" class="img-fluid img-thumbnail w-25"></img>
-          </div>
-        </div>
+const Brotherhood = () => {
+  const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8];
+  const secondrow = [image1, image2, image3, image4, image5, image6, image7, image8];
+
+  return (
+    <div class="pillar-item">
+      <div class="pillar-title brotherhood-title">
+        Brotherhood
+      </div>
+      <FastMarquee
+        speed={60}
+        delay={0}
+        pauseOnHover
+        direction="left"
+        class = "marquee"
+        >
+        {firstrow.map((image) => (
+          <img src={image} alt="brohood" class="img"></img>
+        ))}
+      </FastMarquee>
+      <FastMarquee
+        speed={60}
+        delay={0}
+        pauseOnHover
+        direction="left"
+        class = "marquee"
+        >
+        {secondrow.map((image) => (
+          <img src={image} alt="brohood" class="img"></img>
+        ))}
+      </FastMarquee>
+      </div>
     );
-  }
-}
-
+  };
+  
 export default Brotherhood;

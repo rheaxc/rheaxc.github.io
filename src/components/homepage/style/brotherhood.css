@@ -1,3 +1,13 @@
 .brotherhood-title{
   text-align: left;
 }
+
+
+.marquee{
+  height: 20em;
+}
+ 
+.img {
+  max-height: 100%;
+  width: auto;
+}

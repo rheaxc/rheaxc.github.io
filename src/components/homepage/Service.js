@@ -1,25 +1,51 @@
-import React from 'react';
-import './style/service.css'
+import React, { useState } from 'react';
+import "./style/brotherhood.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FastMarquee from 'react-fast-marquee';
 
-class Service extends React.Component {
-  constructor() {
-    super();
-  }
+// brotherhood images are here:
+import image1 from '../../images/homepage/brotherhood/1.jpg';
+import image2 from '../../images/homepage/brotherhood/9.jpg';
+import image3 from '../../images/homepage/brotherhood/3.jpg';
+import image4 from '../../images/homepage/brotherhood/4.jpg';
+import image5 from '../../images/homepage/brotherhood/5.jpg';
+import image6 from '../../images/homepage/brotherhood/6.jpg';
+import image7 from '../../images/homepage/brotherhood/7.jpg';
+import image8 from '../../images/homepage/brotherhood/8.jpg';
 
-  render() {
-    return (
-        <div class = "pillar-item">
-          <div class = "pillar-title service-title">
-            Service
-          </div>
-          <div class = "pillar-images service-image-container">
-            image 1
-            image 2d
-            image 3
-          </div>
-        </div>
+const Service = () => {
+  const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8];
+  const secondrow = [image1, image2, image3, image4, image5, image6, image7, image8];
+
+  return (
+    <div class="pillar-item">
+      <div class="pillar-title brotherhood-title">
+        Service
+      </div>
+      <FastMarquee
+        speed={60}
+        delay={0}
+        pauseOnHover
+        direction="righ"
+        class = "marquee"
+        >
+        {firstrow.map((image) => (
+          <img src={image} alt="brohood" class="img"></img>
+        ))}
+      </FastMarquee>
+      <FastMarquee
+        speed={60}
+        delay={0}
+        pauseOnHover
+        direction="le"
+        class = "marquee"
+        >
+        {secondrow.map((image) => (
+          <img src={image} alt="brohood" class="img"></img>
+        ))}
+      </FastMarquee>
+      </div>
     );
-  }
-}
-
+  };
+  
 export default Service;
