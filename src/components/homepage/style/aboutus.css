@@ -1,0 +1,23 @@
+
+#about-us-image-container{
+  width: 60%;
+}
+#about-us-text-container{
+  width: 40%;
+}
+#about-us-image{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.about-us-item {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.about-us-container {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 1%;
+}

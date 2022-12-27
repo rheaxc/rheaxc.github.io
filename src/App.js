@@ -5,9 +5,9 @@ import Navbar from "./components/Navbar";
 import FAQ from "./components/FAQ";
 import Members from "./components/Members";
 import Rush from "./components/Rush";
+import HomePage from "./components/HomePage";
 
 import './style/App.css';
-import HomePage from "./components/HomePage";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
            <Navbar />
               <Routes>
 
-                <Route path="/homepage" element={<HomePage />}/>
+                <Route path="/" element={<HomePage />}/>
 
                 <Route path="/members" element={<Members />}/>
 

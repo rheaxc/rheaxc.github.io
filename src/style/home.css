@@ -1,0 +1,35 @@
+/* should i move this style to the homepage folder idk */
+
+.title{
+  font-family: "Monaco", Monospace;
+  font-size: 6em;
+}
+
+.homepage{
+  text-align: center;
+}
+
+.intro{
+  font-size: 2em;
+  font-weight:bold;
+}
+
+
+ /* this is the style to keep pillars uniform */
+.pillar-item{
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.pillar-title{
+  font-size: 4em;
+  font-weight: bold;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.pillar-images{
+  display: flex;
+  flex-direction: row;
+}
