@@ -8,10 +8,12 @@ export default function Navbar() {
     return (
       <div className= "navigation">
         <div className = "logo">
-          <div class = "image"> 
-           <img src = {logo} alt = "tht"/>
+          <div className = "image"> 
+            <Link to= "/">
+              <img src = {logo} alt = "tht"/>
+            </Link>
           </div>
-          <p class = "umich"> university of michigan </p>
+          <p className = "umich"> University of Michigan </p>
         </div>
         <div className = "nav-container">
           <li className = "navbar-item">
@@ -21,17 +23,17 @@ export default function Navbar() {
           </li>
           <li className = "navbar-item">
             <Link to= "/members">
-              meet our brothers
+              Meet our Brothers
             </Link>
           </li>
           <li className = "navbar-item">
             <Link to= "/rush">
-              join the family
+              Join the Brotherhood
             </Link>
           </li>
           <li className="navbar-item">
             <Link to= "/faq">
-              i am confused
+               Confused?
             </Link>
           </li>
         </div>

@@ -7,7 +7,7 @@ class Intro extends React.Component {
   constructor() {
     super();
     this.state = {
-      strings: ["brotherhood", "philanthropy organization", "professional community", "family"]
+      strings: ["brotherhood", "philanthropy organization", "professional community", "Society of Engineers", "family"]
     };
 }
 

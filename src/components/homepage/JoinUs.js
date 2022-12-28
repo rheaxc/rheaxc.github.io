@@ -24,7 +24,7 @@ class JoinUs extends React.Component {
             <div class="hover-overlay"></div>
                 <div class="hover-3-content px-5 py-4">
                     <h3 class="hover-3-title white text-uppercase font-weight-bold mb-1">JOIN THE BROTHERHOOD</h3>
-                    <Link to='/rush' class= "hover-3-description small text-uppercase mb-0">click to learn how to rush</Link>
+                    <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> RUSH > </Link>
                 </div>
             </div>
           </div>
