@@ -1,0 +1,10 @@
+.rush-video-wrapper{
+  height: 30em;
+  width: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.rush-video{
+  padding-top: 2em;
+}

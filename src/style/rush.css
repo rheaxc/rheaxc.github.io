@@ -1,0 +1,31 @@
+.rush-header{
+  text-align: center;
+  font-size: 100px;
+  color: #883a3a ;
+}
+
+
+.interest-form{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+.interest-links{
+    text-decoration: none;
+    color: #883a3a;
+}
+
+.rush-schedule {
+  display: flex;
+  height: 40em;
+  width: auto;
+  justify-content: center;
+}
+
+
+.rush-image{
+  height: 100%;
+  width: auto;
+}

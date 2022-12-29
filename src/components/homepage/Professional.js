@@ -4,14 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FastMarquee from 'react-fast-marquee';
 
 // brotherhood first row images are here:
-import image1 from '../../images/homepage/brotherhood/1.jpg';
-import image2 from '../../images/homepage/brotherhood/2.jpg';
-import image3 from '../../images/homepage/brotherhood/3.jpg';
-import image4 from '../../images/homepage/brotherhood/4.jpg';
-import image5 from '../../images/homepage/brotherhood/5.jpg';
-import image6 from '../../images/homepage/brotherhood/6.jpg';
-import image7 from '../../images/homepage/brotherhood/7.jpg';
-import image8 from '../../images/homepage/brotherhood/8.jpg';
+import image1 from '../../images/homepage/professional/1.jpg';
+import image2 from '../../images/homepage/professional/2.jpg';
+import image3 from '../../images/homepage/professional/3.jpg';
+import image4 from '../../images/homepage/professional/4.jpg';
+import image5 from '../../images/homepage/professional/5.jpg';
+import image6 from '../../images/homepage/professional/6.jpg';
+import image7 from '../../images/homepage/professional/7.jpg';
+import image8 from '../../images/homepage/professional/8.jpg';
 
 // brotherhood second row images are here:
 import image9 from '../../images/homepage/brotherhood/9.jpg';
@@ -38,7 +38,7 @@ const Professional = () => {
         pauseOnHover
         direction="left"
         gradient={false}
-        class = "marquee"
+        className = "pillar-marquee"
         >
         {firstrow.map((image) => (
           <img src={image} alt="brohood" class="img"></img>
@@ -50,7 +50,7 @@ const Professional = () => {
         pauseOnHover
         gradient={false}
         direction="left"
-        class = "marquee"
+        className = "pillar-marquee"
         >
         {secondrow.map((image) => (
           <img src={image} alt="brohood" class="img"></img>

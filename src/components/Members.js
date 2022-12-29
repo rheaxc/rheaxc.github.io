@@ -1,6 +1,9 @@
 import React from 'react';
 import AnimatedNumber from "react-animated-numbers";
 import Companies from './members/Companies';
+import Stats from './members/Stats';
+
+import '../style/members.css'
 
 class Members extends React.Component {
   constructor() {
@@ -12,21 +15,8 @@ class Members extends React.Component {
   render() {
     return (
       <div className="members">
-        <div className='stats'>
-          <AnimatedNumber
-            value={100}
-            duration={100}
-            formatValue={n => `${n}+`}
-          />
-         <AnimatedNumber
-            value={100}
-            duration={2000}
-            formatValue={n => `${n}+`}
-          />
-          
-          <Companies/>
-          
-        </div>
+        <Stats />
+        <Companies/>
       </div>
     );
   }
