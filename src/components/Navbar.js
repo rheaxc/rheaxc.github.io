@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
       <div className= "navigation">
         <div className = "logo">
-          <div className = "image"> 
+          <div className = "image">
             <Link to= "/">
               <img src = {logo} alt = "tht"/>
             </Link>
@@ -28,12 +28,7 @@ export default function Navbar() {
           </li>
           <li className = "navbar-item">
             <Link to= "/rush">
-              Join the Brotherhood
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to= "/faq">
-               Confused?
+              Join the Family
             </Link>
           </li>
         </div>

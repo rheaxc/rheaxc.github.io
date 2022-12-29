@@ -1,9 +1,15 @@
 .rush-header{
-  text-align: center;
-  font-size: 100px;
-  color: #883a3a ;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
+.rush-title{
+  font-size:100px;
+  color: #883a3a;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
 .interest-form{
   display: flex;
@@ -28,4 +34,9 @@
 .rush-image{
   height: 100%;
   width: auto;
+}
+
+.questions{
+  display: flex;
+  justify-content: center;
 }

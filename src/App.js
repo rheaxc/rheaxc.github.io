@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import FAQ from "./components/FAQ";
 import Members from "./components/Members";
 import Rush from "./components/Rush";
 import HomePage from "./components/HomePage";
@@ -23,8 +22,6 @@ function App() {
                 <Route path="/members" element={<Members />}/>
 
                 <Route path="/rush" element={<Rush />}/>
-
-                <Route path="/faq" element={<FAQ/>}/>
 
               </Routes>
           </div>
