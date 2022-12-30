@@ -12,9 +12,9 @@ class Stats extends React.Component {
     this.state = {
       fontSize: 60,
       duration: 1000,
-      members: 100,
-      majors: 100,
-      countries: 100,
+      members: 70,
+      majors: 15,
+      jobs: 100,
       states: 100,
     };
   }
@@ -23,7 +23,6 @@ class Stats extends React.Component {
     return (
       <div className = 'stat-container'>
         <div className='stat-values'>
-          <div className = 'stat-row'>
             <div className = 'stat-item'>
               <div class="stat-number">
                   <h1 className = "stat-plus"> + </h1>
@@ -33,7 +32,7 @@ class Stats extends React.Component {
                   duration={this.state.duration}
                 />
               </div>
-              <p className ="stat-caption"> members </p>
+              <p className ="stat-caption"> Active Members </p>
             </div>
             <div className = 'stat-item'>
               <div class="stat-number">
@@ -44,33 +43,19 @@ class Stats extends React.Component {
                   duration={this.state.duration}
                 />
               </div>
-              <p className ="stat-caption"> majors </p>
+              <p className ="stat-caption"> Different Majors </p>
             </div>
-          </div>
-          <div className = 'stat-row'>
             <div className = 'stat-item'>
               <div class="stat-number">
-                <h1 className = "stat-plus"> + </h1>
+                <h1 className = "stat-plus"> % </h1>
                 <AnimatedNumber
-                  animateToNumber={this.state.countries}
+                  animateToNumber={this.state.jobs}
                   fontStyle={{ fontSize: this.state.fontSize }}
                   duration={this.state.duration}
                 />
               </div>
-              <p className ="stat-caption"> countries </p>
+              <p className ="stat-caption"> Employment Rate </p>
             </div>
-            <div className = 'stat-item'>
-              <div class="stat-number">
-                <h1 className = "stat-plus"> + </h1>
-                <AnimatedNumber
-                  animateToNumber={this.state.states}
-                  fontStyle={{ fontSize: this.state.fontSize }}
-                  duration={this.state.duration}
-                />
-              </div>
-              <p className ="stat-caption"> states </p>
-            </div>
-          </div>
         </div>
         <div className = 'stat-paragraph'>
           <p>

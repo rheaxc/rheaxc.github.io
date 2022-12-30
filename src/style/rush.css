@@ -1,3 +1,7 @@
+.rush{
+  padding-top: 100px;
+}
+
 .rush-header{
   justify-content: center;
   display: flex;
@@ -13,14 +17,22 @@
 
 .interest-form{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 2em;
   padding-top: 1em;
 }
 
 .interest-links{
     text-decoration: none;
-    color: #883a3a;
+    color: white;
+    border: 2px solid #f1dbb6;
+    border-radius: 20px;
+    background-color: #883a3a;
+}
+
+.interest-links:hover{
+    color: white;
+    opacity: .8;
 }
 
 .rush-schedule {
