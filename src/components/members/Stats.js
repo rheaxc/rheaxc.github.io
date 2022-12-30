@@ -11,7 +11,7 @@ class Stats extends React.Component {
     super();
     this.state = {
       fontSize: 60,
-      duration: 100,
+      duration: 1000,
       members: 100,
       majors: 100,
       countries: 100,

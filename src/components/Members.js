@@ -1,7 +1,7 @@
 import React from 'react';
-import AnimatedNumber from "react-animated-numbers";
 import Companies from './members/Companies';
 import Stats from './members/Stats';
+import Committees from './members/Committees.js';
 
 import '../style/members.css'
 
@@ -17,6 +17,7 @@ class Members extends React.Component {
       <div className="members">
         <Stats />
         <Companies/>
+        <Committees/>
       </div>
     );
   }

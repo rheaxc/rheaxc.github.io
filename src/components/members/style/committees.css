@@ -1,0 +1,26 @@
+.com-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.com-icons .Com-item {
+
+    margin-bottom: 20px;
+} 
+
+.Committees{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.Com-Header{
+    font-size: 40px;
+    text-shadow: 0 0 2px black;
+}
+

@@ -11,27 +11,15 @@ function Faq() {
       </div>
       <Accordion className = 'faq-questions'>
         <Accordion.Item className = 'faq-question-item' eventKey="0">
-          <Accordion.Header className = 'faq-question-title'>Accordion Item #1</Accordion.Header>
+          <Accordion.Header className = 'faq-question-title'>What are fraternities and sororities?</Accordion.Header>
           <Accordion.Body className = 'faq-question-ans'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Fraternities and Sororities are what many people refer to "Greek Life"— societies that induct members for lifetime membership. Sororities are all-female Greek Organizations, while Fraternities can be both all-male and co-ed Organizations. Each organization has certain rules and values that make each one unique; however, they are often considered either "Social" or "Professional" groups. Professional Greek Organizations have strong focus on developing their members professionally as well as creating a strong Brotherhood or Sisterhood.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item className = 'faq-question-item' eventKey="1">
-          <Accordion.Header className = 'faq-question-title' >Accordion Item #2</Accordion.Header>
+          <Accordion.Header className = 'faq-question-title' >What kind of Greek organization is Theta Tau?</Accordion.Header>
           <Accordion.Body className = 'faq-question-ans'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Theta Tau is a Co-ed Professional Engineering Fraternity. This makes us a professional fraternity, which means we value the professional development and conduct of our members more than a social fraternity might. We are also composed of members that have an interest in Engineering, which unites us as another common focus. Finally, we are co-ed, and accept members of all genders.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

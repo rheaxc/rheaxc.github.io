@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./style/service.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FastMarquee from 'react-fast-marquee';

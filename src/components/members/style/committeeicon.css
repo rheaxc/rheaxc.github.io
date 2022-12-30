@@ -1,0 +1,38 @@
+.Com-item {
+    background-color: white;
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+}
+  
+.com-name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    padding-top: 25%;
+}
+
+.com-description {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.com-img
+{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 17px 17px 0px 0px;
+}

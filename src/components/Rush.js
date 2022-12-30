@@ -17,18 +17,18 @@ class Rush extends React.Component {
       <div className="rush">
         <div className = "rush-header">
           <h1 className = "rush-title">
-            RUSH
+            RUSH!
           </h1>
           <h1 className = "rush-title">
-            RUSH
+            RUSH!
           </h1>
           <h1 className = "rush-title">
-            RUSH
+            RUSH!
           </h1>
         </div>
         <Video />
         <div className = "interest-form">
-          <a className = "interest-links" href = "https://findtheinvisiblecow.com/"> interest form </a>
+          <a className = "interest-links" href = "https://findtheinvisiblecow.com/"> Interest Form </a>
           <a className = "interest-links" href = "mailto:tht-rush@umich.edu"> contact: tht-rush@umich.edu </a>
         </div>
         <div className  = "rush-schedule">
