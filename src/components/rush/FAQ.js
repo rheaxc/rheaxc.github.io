@@ -22,6 +22,12 @@ function Faq() {
             Theta Tau is a Co-ed Professional Engineering Fraternity. This makes us a professional fraternity, which means we value the professional development and conduct of our members more than a social fraternity might. We are also composed of members that have an interest in Engineering, which unites us as another common focus. Finally, we are co-ed, and accept members of all genders.
           </Accordion.Body>
         </Accordion.Item>
+        <Accordion.Item className = 'faq-question-item' eventKey="0">
+          <Accordion.Header className = 'faq-question-title'>What is Rushing?</Accordion.Header>
+          <Accordion.Body className = 'faq-question-ans'>
+          Rushing is an interesting term to describe the first interactions you have with Greek organization. Theta Tau's Rush week is designed to introduce you to the Fraternity and it's members. You don't have to be an Engineer to attend Theta Tau rush events, and you are allowed to Rush other Greek fraternities and sororities while rushing Theta Tau.
+          </Accordion.Body>
+        </Accordion.Item>
       </Accordion>
     </div>
   );
