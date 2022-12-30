@@ -14,6 +14,7 @@ if you have any questions, reach out to: rhea chowdhury (rheaxc@umich.edu)
 ## bugs
 
 ## in progress:
+* [rush] faq
 * [home page] photos
 * [members] committee cards
 * [members] family tree
