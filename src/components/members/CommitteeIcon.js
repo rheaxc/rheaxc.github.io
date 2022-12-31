@@ -1,27 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
+import ReactCardFlip from 'react-card-flip';
 import "./style/committeeicon.css";
 
-const CommitteeIcon = ({name, image, description}) => {
-    const [flipped, setFlipped] = useState(false);
-    
-    const handleClick = () => {
-      setFlipped(!flipped);
-    };
-    
-    return (
-      <div className= "Com-item" onClick={handleClick}> 
-        <div className={`com-container ${flipped ? 'flip' : ''}`}>
-          <div className="com-img" style={{ backgroundImage: `url(${image})`}} >
-            <p className="com-name"> {name} </p>
+class CommitteeIcon extends React.Component {
+    constructor() {
+      super();
+        this.state = {
+        isFlipped: false
+      };
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    handleClick(e) {
+      e.preventDefault();
+      this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+    }
+  
+    render() {
+      const { name, image, description } = this.props;
+  
+      return (
+        <ReactCardFlip className= "Com-Icon" isFlipped={this.state.isFlipped} flipDirection="horizontal">
+          <div className= "Com-item" onClick={this.handleClick}> 
+            <div className="com-img" style={{ backgroundImage: `url(${image})`}} >
+              <p className="com-name"> {name} </p>
+            </div>
           </div>
-        </div>
-        <div className={`com-description ${flipped ? '' : 'flip'}`}>
-            <p>
-              {description}
-            </p>
-        </div>
-      </div>
-    );
-  };
+          <div className="Com-item" onClick={this.handleClick}>
+            <p>{description}</p>
+          </div>
+        </ReactCardFlip>
+      )
+    }
+}
   
   export default CommitteeIcon;
