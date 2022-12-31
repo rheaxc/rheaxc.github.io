@@ -12,10 +12,11 @@
 }
 
 .company-container{
-  padding-top: 3%;
+  
 }
 
 .company-header{
   text-align: center;
-
+  background-color: #883a3a;
+  color: white;
 }
