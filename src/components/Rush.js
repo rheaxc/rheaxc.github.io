@@ -26,7 +26,6 @@ class Rush extends React.Component {
             RUSH!
           </h1>
         </div>
-        <Video />
         <div className = "interest-form">
           <a className = "interest-links" href = "https://forms.gle/a9zmfc9f5i5hgP4m7"> Interest Form </a>
           <a className = "interest-links" href = "mailto:tht-rush@umich.edu"> Contact: tht-rush@umich.edu </a>
@@ -34,6 +33,7 @@ class Rush extends React.Component {
         <div className  = "rush-schedule">
           <img className = "rush-image" src = {rush_schedule} alt = "rush!"></img>
         </div>
+        <Video />
         <div className = 'questions'>
           <Faq />
         </div>

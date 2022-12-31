@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style/committeeicon.css";
 
-const CommitteeIcon = ({name, image, description}) => (
+const CommitteeIcon = ({name, image, description}) => {
+    const [flipped, setFlipped] = useState(false);
     
-    <div className= "Com-item"> 
-        <div className="com-img" style={{ backgroundImage: `url(${image})`}} >
+    const handleClick = () => {
+      setFlipped(!flipped);
+    };
+    
+    return (
+      <div className= "Com-item" onClick={handleClick}> 
+        <div className={`com-container ${flipped ? 'flip' : ''}`}>
+          <div className="com-img" style={{ backgroundImage: `url(${image})`}} >
             <p className="com-name"> {name} </p>
+          </div>
         </div>
-        <div>
-            <p className="com-description">
-                {description}
+        <div className={`com-description ${flipped ? '' : 'flip'}`}>
+            <p>
+              {description}
             </p>
         </div>
-    </div>
-  );
-
-
+      </div>
+    );
+  };
+  
   export default CommitteeIcon;

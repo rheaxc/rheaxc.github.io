@@ -17,21 +17,20 @@
 
 .interest-form{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   font-size: 2em;
   padding-top: 1em;
 }
 
 .interest-links{
     text-decoration: none;
-    color: white;
-    border: 2px solid #f1dbb6;
+    color: #883a3a;
     border-radius: 20px;
-    background-color: #883a3a;
 }
 
 .interest-links:hover{
-    color: white;
+    color: #883a3a;
     opacity: .8;
 }
 
@@ -49,6 +48,7 @@
 }
 
 .questions{
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
