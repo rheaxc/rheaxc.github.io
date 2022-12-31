@@ -1,60 +1,48 @@
 import React from "react";
 import "../style/footer.css";
-import InstagramLogo from "../images/instaIcon.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
-export default function Footer() {
+// images
+import rush from '../images/footer/rush.jpg'
+
+
+
+class Footer extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
+
+  render() {
+
     return (
-        <React.Fragment>
-            <div className="container-fluid footer-container">
-                <div className="container footer-info">
-                    <div className="footer-contact-us">
-                        <h4>Contact Us</h4>
-                        <div className="contact-links">
-                            <div className="contact">
-                                <a
-                                    className="contact-email"
-                                    href="mailto:tht-regents@umich.edu"
-                                >
-                                    Regent&nbsp;/&nbsp;Vice Regent
-                                </a>
-                            </div>
-                            <div className="vertical" />
-                            <div className="contact">
-                                <a
-                                    className="contact-email"
-                                    href="mailto:tht-eboard@umich.edu"
-                                >
-                                    Executive Board
-                                </a>
-                            </div>
-                            <div className="vertical" />
-                            <div className="contact">
-                                <a
-                                    className="contact-email"
-                                    href="mailto:tht-corsec@umich.edu"
-                                >
-                                    Alumni&nbsp;/&nbsp;Interchapter Relations
-                                </a>
-                            </div>
-                            <div className="vertical" />
-                            <div className="contact">
-                                <a
-                                    className="contact-email"
-                                    href="mailto:tht-corporate@umich.edu"
-                                >
-                                    Corporate Sponsorship Events
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="contact-icon">
-                            <a href="https://www.instagram.com/thetatau_umich" target="_blank" rel="noopener noreferrer">
-                                <img style= {{width: "5%", height: "5%"}} src={InstagramLogo}/>
-                            </a>
-                        </div>
-                    </div>
+        <div class = "footer-container">
+          <div class="container-fluid p-0">
+          <div class="hover hover-3 text-white rounded">
+            <img class="img-fluid of" src={this.props.image} />
+            <div class="hover-overlay"></div>
+              {(this.props.page === 'homepage') ? (
+                <div class="hover-3-content px-5 py-4">
+                  <h3 class="hover-3-title white text-uppercase font-weight-bold mb-1">JOIN THE BROTHERHOOD</h3>
+                  <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> RUSH > </Link>
                 </div>
+              ) : (
+                <div class="hover-3-content px-5 py-4">
+                  <h3 class="hover-3-title white text-uppercase font-weight-bold mb-1">CONTACT US</h3>
+                  <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> REGENT & VICE REGENT > </Link>
+                  <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> EXECUTIVE BOARD > </Link>
+                  <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> ALUMNI & INTERCHAPTER RELATIONS> </Link>
+                  <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> COOPORATE & SPONSORSHIP EVENTS> </Link>
+                </div>
+              ) }
             </div>
-        </React.Fragment>
+          </div>
+        </div>
+
     );
+  }
 }
+
+export default Footer;

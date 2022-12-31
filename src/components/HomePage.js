@@ -7,7 +7,8 @@ import Intro from './homepage/Intro.js'
 import Brotherhood from './homepage/Brotherhood.js'
 import Service from './homepage/Service.js'
 import Professional from './homepage/Professional.js'
-import JoinUs from './homepage/JoinUs.js'
+import Footer from './Footer.js'
+import homepage from '../images/footer/homepage.jpg';
 
 class HomePage extends React.Component {
   constructor() {
@@ -29,7 +30,7 @@ class HomePage extends React.Component {
           <Service />
           <Professional />
         </div>
-        <JoinUs />
+        <Footer page='homepage' image={homepage}/>
       </div>
     );
   }

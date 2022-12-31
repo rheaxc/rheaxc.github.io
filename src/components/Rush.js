@@ -1,9 +1,11 @@
 import React from 'react';
-
 import Video from './rush/Video.js';
 import Faq from './rush/FAQ.js';
+import Footer from './Footer.js'
 import '../style/rush.css'
+
 import rush_schedule from '../images/rush/rush_schedule.jpg';
+import rush from '../images/footer/rush.jpg'
 
 
 class Rush extends React.Component {
@@ -37,6 +39,7 @@ class Rush extends React.Component {
         <div className = 'questions'>
           <Faq />
         </div>
+        <Footer page='rush' image={rush}/>
       </div>
     );
   }
