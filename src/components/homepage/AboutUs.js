@@ -1,4 +1,4 @@
-import fullfrat from '../../images/homepage/fullfrat.jpg';
+import fullfrat from '../../images/homepage/fullfrat.jpeg';
 import React from 'react';
 import './style/aboutus.css'
 

@@ -28,7 +28,7 @@ class Rush extends React.Component {
         </div>
         <Video />
         <div className = "interest-form">
-          <a className = "interest-links" href = "https://findtheinvisiblecow.com/"> Interest Form </a>
+          <a className = "interest-links" href = "https://forms.gle/a9zmfc9f5i5hgP4m7"> Interest Form </a>
           <a className = "interest-links" href = "mailto:tht-rush@umich.edu"> Contact: tht-rush@umich.edu </a>
         </div>
         <div className  = "rush-schedule">
