@@ -1,22 +1,26 @@
 
 .company-marquee{
-  height:5em;
+  height:10em;
   width: auto;
 }
 
 .company-logo {
   max-height: 100%;
   width: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  border-radius: 80px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .company-container{
-  
+  background-color: #883a3a;
+  padding-top: 2%;
+  padding-bottom: 2em;
 }
 
 .company-header{
-  text-align: center;
-  background-color: #883a3a;
+  padding-left: 2em;
   color: white;
+  font-size: 40px;
+  padding-bottom: 10px;
 }

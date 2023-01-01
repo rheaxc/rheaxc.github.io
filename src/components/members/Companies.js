@@ -32,7 +32,7 @@ const Companies = () => {
 
   return (
     <div class="company-container">
-      <h2 className = "company-header"> We Work Here! </h2>
+      <h2 className = "company-header"> We Work Here: </h2>
       <FastMarquee
         speed={60}
         delay={0}
@@ -42,18 +42,6 @@ const Companies = () => {
         className= "company-marquee"
         >
         {firstrow.map((image) => (
-          <img src={image} alt="companies" class="company-logo"></img>
-        ))}
-      </FastMarquee>
-      <FastMarquee
-        speed={60}
-        delay={0}
-        pauseOnHover
-        direction="right"
-        gradient={false}
-        className= "company-marquee"
-        >
-        {secondrow.map((image) => (
           <img src={image} alt="companies" class="company-logo"></img>
         ))}
       </FastMarquee>

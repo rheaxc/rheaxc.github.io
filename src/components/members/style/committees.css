@@ -7,23 +7,21 @@
 }
 
 .com-icons .Com-item {
-
     margin-bottom: 20px;
-} 
+}
 
 .Committees{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    background-color:  #f1dbb6;
+    padding-top: 2em;
 }
 
 .Com-Header{
-    font-size: 40px;
-    color: black;
-    text-shadow: 0 0 2px black;
+  color: black;
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
 .subheader-2{
