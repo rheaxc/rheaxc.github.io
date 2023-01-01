@@ -6,8 +6,8 @@
     border: 2px hidden black;
     border-radius: 20px 20px 20px 20px;
     margin: 0 auto;
-    height: 20em;
-    width: 20em;
+    height: 25em;
+    width: 25em;
   }
 
 .Com-item:hover{
@@ -34,5 +34,5 @@
 }
 
 .com-description{
-  font-size: 30px;
+  font-size: 18px;
 }

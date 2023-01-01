@@ -7,7 +7,7 @@ function Faq() {
   return (
     <div className = "faq-container">
       <div className = "faq-header">
-        <h1 className = "red faq-title"> Frequently Asked Questions </h1>
+        <h1 className = "faq-title"> Frequently Asked Questions </h1>
       </div>
       <Accordion className = 'faq-questions'>
         <Accordion.Item className = 'faq-question-item' eventKey="0">

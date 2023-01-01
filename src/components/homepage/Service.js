@@ -3,7 +3,7 @@ import "./style/service.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FastMarquee from 'react-fast-marquee';
 
-// brotherhood images are here:
+//Service images are here:
 import image1 from '../../images/homepage/service/1.jpg';
 import image2 from '../../images/homepage/service/2.jpg';
 import image3 from '../../images/homepage/service/3.jpg';
@@ -13,10 +13,10 @@ import image6 from '../../images/homepage/service/6.jpg';
 import image7 from '../../images/homepage/service/7.jpg';
 import image8 from '../../images/homepage/service/8.jpg';
 
-// brotherhood second row images are here:
+//Sevice second row images are here:
 import image9 from '../../images/homepage/service/9.jpg';
-import image10 from '../../images/homepage/brotherhood/10.jpg';
-import image11 from '../../images/homepage/brotherhood/11.jpg';
+import image10 from '../../images/homepage/service/10.jpeg';
+import image11 from '../../images/homepage/service/11.jpeg';
 import image12 from '../../images/homepage/brotherhood/12.jpg';
 import image13 from '../../images/homepage/brotherhood/13.jpg';
 import image14 from '../../images/homepage/brotherhood/14.jpg';

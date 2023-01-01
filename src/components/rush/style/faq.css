@@ -1,5 +1,10 @@
 .faq-title{
+  font-size: 70px;
   text-align: center;
+  color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-shadow: 0 0 15px #883a3a;
 }
 
 .faq-container{
