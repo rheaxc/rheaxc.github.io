@@ -7,7 +7,7 @@ function Faq() {
   return (
     <div className = "faq-container">
       <div className = "faq-header">
-        <h1 className = "faq-title"> Frequently Asked Questions </h1>
+        <h1 className = "faq-title"> FAQ </h1>
       </div>
       <Accordion className = 'faq-questions'>
         <Accordion.Item className = 'faq-question-item' eventKey="0">
@@ -76,9 +76,9 @@ function Faq() {
                 - Have a minimum (passing GPA) of 2.0
             </li>
             <li>
-                - Not be a member of a competing Fraternity or Sorority    
+                - Not be a member of a competing Fraternity or Sorority
             </li>
-          </ul>     
+          </ul>
             </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item className = 'faq-question-item' eventKey="10">

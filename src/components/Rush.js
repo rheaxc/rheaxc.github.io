@@ -30,14 +30,14 @@ class Rush extends React.Component {
         </div>
         <div className='interest'>
           <div className = "interest-info">
-              <p> Thank you so much for your interest in Theta Tau! </p>
+              <p className = "interest-text"> Thank you so much for your interest in Theta Tau! </p>
 
-              <p> Below is our schedule for our winter 2023 rush semester. You can also sign up at our
+              <p className = "interest-text"> Below is our schedule for our winter 2023 rush semester. You can also sign up at our
               <a className = "red interest-links" href = "https://forms.gle/a9zmfc9f5i5hgP4m7"> interest form </a>
               to stay updated!
               </p>
 
-              <p>
+              <p className = "interest-text" >
               If you have any questions, please
               <a className = "red interest-links" href = "mailto:tht-rush@umich.edu"> contact rush. </a>
               </p>
@@ -47,9 +47,7 @@ class Rush extends React.Component {
             </div>
         </div>
         <Video />
-        <div className = 'questions'>
-          <Faq />
-        </div>
+
         <Footer page='rush' image={rush}/>
       </div>
     );
