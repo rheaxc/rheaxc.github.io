@@ -1,5 +1,5 @@
 .navigation {
-  background-color: #f1dbb6;
+  background-color: white;
   height: 5em;
   display: flex;
   flex-direction: row;
@@ -10,7 +10,6 @@
   left: 0;
   width: 100%;
   z-index: 2;
-  opacity: .95;
 }
 
 li {

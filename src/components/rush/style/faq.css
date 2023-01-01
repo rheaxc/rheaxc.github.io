@@ -1,14 +1,22 @@
 .faq-title{
   font-size: 70px;
   text-align: center;
-  color: white;
+  color: black;
+  font-weight: bold;
   padding-left: 2%;
   padding-right: 2%;
 }
+
+.faq-header{
+  border-radius: 50px 50px 50px 50px;
+}
+
 
 .faq-container{
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 60%;
+  background-color: #d7e4cd;
+  border-radius: 50px 50px 0px 0px;
 }

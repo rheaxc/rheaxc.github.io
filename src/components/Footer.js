@@ -33,8 +33,8 @@ class Footer extends React.Component {
                   <h3 class="hover-3-title white text-uppercase font-weight-bold mb-1">CONTACT US</h3>
                   <a href="mailto:tht-regents@umich.edu" class= "hover-3-description small text-uppercase mb-0"> REGENT & VICE REGENT > </a>
                   <a href="mailto:tht-eboard@umich.edu" class= "hover-3-description small text-uppercase mb-0"> EXECUTIVE BOARD > </a>
-                  <a href="mailto:tht-corsec@umich.edu" class= "hover-3-description small text-uppercase mb-0"> ALUMNI & INTERCHAPTER RELATIONS> </a>
-                  <a href="mailto:tht-corporate@umich.edu" class= "hover-3-description small text-uppercase mb-0"> COOPORATE & SPONSORSHIP EVENTS> </a>
+                  <a href="mailto:tht-corsec@umich.edu" class= "hover-3-description small text-uppercase mb-0"> ALUMNI & INTERCHAPTER RELATIONS > </a>
+                  <a href="mailto:tht-corporate@umich.edu" class= "hover-3-description small text-uppercase mb-0"> COOPORATE & SPONSORSHIP EVENTS > </a>
                 </div>
               ) }
             </div>

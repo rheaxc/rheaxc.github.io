@@ -23,10 +23,10 @@ class Committees extends React.Component {
   render() {
     return (
         <div className='Committees'>
-            <div className='Com-Header'>
+            <div className='red Com-Header'>
                 Committees
             </div>
-            <div className='Com-blurb'>
+            <div className='red Com-blurb'>
               <p className='subheader-2'> There are many committiees within Theta Tau that organize and plan all internal and external events.
                     These committiees are what make Theta Tau run and a key aspect is creating a tight night community wihtin the organization.</p>
               <p className='subheader-2'> Check below to see all the committies and a what they do!</p>
