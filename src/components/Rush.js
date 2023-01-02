@@ -14,6 +14,10 @@ class Rush extends React.Component {
     this.state = {
     };
   }
+
+  handleClick = () =>
+    window.open("https://forms.gle/a9zmfc9f5i5hgP4m7");
+
   render() {
     return (
       <div className="rush">
@@ -21,7 +25,7 @@ class Rush extends React.Component {
             <div className  = "rush-schedule">
                 <img className = "rush-image" src = {rush_schedule} alt = "rush!"></img>
             </div>
-            <button className = "interest-links" onClick = {window.open("https://forms.gle/a9zmfc9f5i5hgP4m7")} >
+            <button className = "interest-links" onClick ={handleClick}>
               Interest Form
             </button>
         </div>
