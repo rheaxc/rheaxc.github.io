@@ -100,7 +100,7 @@
 }
 
 .interest-links:hover{
-    color: #883a3a;
+    color: black;
     opacity: .8;
 }
 
@@ -140,6 +140,7 @@
   padding-top: 20px;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 

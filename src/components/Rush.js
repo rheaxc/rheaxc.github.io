@@ -7,6 +7,10 @@ import '../style/rush.css'
 import rush_schedule from '../images/rush/rush_schedule.jpeg';
 import rush from '../images/footer/rush.jpg'
 
+const handleClick = () => 
+{
+  window.open("https://forms.gle/a9zmfc9f5i5hgP4m7")
+}; 
 
 class Rush extends React.Component {
   constructor() {
@@ -15,8 +19,6 @@ class Rush extends React.Component {
     };
   }
 
-  handleClick = () =>
-    window.open("https://forms.gle/a9zmfc9f5i5hgP4m7");
 
   render() {
     return (
