@@ -1,7 +1,7 @@
 {
-  "main.css": "/thetagamma-web/static/css/main.afef2d6e.chunk.css",
-  "main.js": "/thetagamma-web/static/js/main.f9fff5ff.chunk.js",
-  "main.js.map": "/thetagamma-web/static/js/main.f9fff5ff.chunk.js.map",
+  "main.css": "/thetagamma-web/static/css/main.d63eb391.chunk.css",
+  "main.js": "/thetagamma-web/static/js/main.41c568e9.chunk.js",
+  "main.js.map": "/thetagamma-web/static/js/main.41c568e9.chunk.js.map",
   "static/css/1.75ea141e.chunk.css": "/thetagamma-web/static/css/1.75ea141e.chunk.css",
   "static/js/1.58e1ad5b.chunk.js": "/thetagamma-web/static/js/1.58e1ad5b.chunk.js",
   "static/js/1.58e1ad5b.chunk.js.map": "/thetagamma-web/static/js/1.58e1ad5b.chunk.js.map",
@@ -53,8 +53,8 @@
   "static/media/rush.css": "/thetagamma-web/static/media/25.4917919e.jpg",
   "static/media/24.jpg": "/thetagamma-web/static/media/24.9bc87b90.jpg",
   "static/css/1.75ea141e.chunk.css.map": "/thetagamma-web/static/css/1.75ea141e.chunk.css.map",
-  "static/css/main.afef2d6e.chunk.css.map": "/thetagamma-web/static/css/main.afef2d6e.chunk.css.map",
+  "static/css/main.d63eb391.chunk.css.map": "/thetagamma-web/static/css/main.d63eb391.chunk.css.map",
   "index.html": "/thetagamma-web/index.html",
-  "precache-manifest.1403dffbba3a8a2d9d46daebe42fa20e.js": "/thetagamma-web/precache-manifest.1403dffbba3a8a2d9d46daebe42fa20e.js",
+  "precache-manifest.d3bb506c3828c9a217fc0f3421e5d867.js": "/thetagamma-web/precache-manifest.d3bb506c3828c9a217fc0f3421e5d867.js",
   "service-worker.js": "/thetagamma-web/service-worker.js"
 }
