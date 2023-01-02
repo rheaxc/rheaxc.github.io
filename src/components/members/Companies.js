@@ -2,7 +2,6 @@ import React from 'react';
 import "./style/companies.css";
 import FastMarquee from 'react-fast-marquee';
 
-// TODO: RENAME IMAGE NAMES
 // companies first row images are here:
 import image1 from '../../images/members/companies/1.jpg';
 import image2 from '../../images/members/companies/2.jpg';
@@ -27,8 +26,7 @@ import image20 from '../../images/members/companies/20.jpg';
 
 
 const Companies = () => {
-  const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
-  const secondrow = [image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
+  const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 , image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
 
   return (
     <div class="company-container">
