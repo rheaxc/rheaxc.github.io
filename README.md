@@ -4,16 +4,13 @@ welcome to the repo for the theta tau theta gamma website. theta gamma is the th
 if you have any questions, reach out to: rhea chowdhury (rheaxc@umich.edu)
 
 # current web authors:
-* rhea
-* hari
-
-## completed
-
-* home page
+* rhea 
+* hari 
 
 ## bugs
 
 ## in progress:
+* [high priority] move to theta tau org instead of rhea's github 
 * all descriptions
 * pretty on the phone
 * [members] family tree
