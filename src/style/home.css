@@ -1,8 +1,10 @@
 /* should i move this style to the homepage folder idk */
 
 .title{
-  font-family: "Monaco", Monospace;
+  font-family: Helvetica;
+  font-style: normal;
   font-size: 6em;
+  font-weight: bold;
 }
 
 .homepage{
@@ -17,6 +19,7 @@
 .umich{
   text-align: center;
   font-size: 2em;
+  font-family: "Copperplate", fantasy;
 }
 
 
@@ -31,7 +34,6 @@
 .pillar-title{
   font-size: 4em;
   font-weight: bold;
-  font-family: monospace;
   padding-left: 3%;
   padding-right: 3%;
   color: #883a3a;

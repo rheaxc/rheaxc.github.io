@@ -15,22 +15,20 @@ import image8 from '../../images/homepage/service/8.jpg';
 
 //Sevice second row images are here:
 import image9 from '../../images/homepage/service/9.jpg';
-import image10 from '../../images/homepage/service/10.jpeg';
-import image11 from '../../images/homepage/service/11.jpeg';
-import image12 from '../../images/homepage/brotherhood/12.jpg';
-import image13 from '../../images/homepage/brotherhood/13.jpg';
-import image14 from '../../images/homepage/brotherhood/14.jpg';
-import image15 from '../../images/homepage/brotherhood/15.jpg';
-import image16 from '../../images/homepage/brotherhood/16.jpg';
+import image10 from '../../images/homepage/service/10.jpg';
+import image11 from '../../images/homepage/service/11.jpg';
+import image12 from '../../images/homepage/service/12.jpg';
+import image13 from '../../images/homepage/service/13.jpg';
+import image14 from '../../images/homepage/service/14.jpg';
 
 
 const Service = () => {
-  const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8];
-  const secondrow = [image9, image10, image11, image12, image13, image14, image15, image16];
+  const firstrow = [image1, image2, image3, image4, image5, image6, image7];
+  const secondrow = [image8, image9, image10, image11, image12, image13, image14];
 
   return (
-    <div class="pillar-item">
-      <div class="pillar-title service-title">
+    <div className="pillar-item">
+      <div className="pillar-title service-title">
         SERVICE
       </div>
       <FastMarquee
@@ -42,7 +40,7 @@ const Service = () => {
         className = "pillar-marquee"
         >
         {firstrow.map((image) => (
-          <img src={image} alt="service" class="img"></img>
+          <img src={image} alt="service" className="img"></img>
         ))}
       </FastMarquee>
       <FastMarquee
@@ -54,7 +52,7 @@ const Service = () => {
         className = "pillar-marquee"
         >
         {secondrow.map((image) => (
-          <img src={image} alt="service" class="img"></img>
+          <img src={image} alt="service" className="img"></img>
         ))}
       </FastMarquee>
       </div>

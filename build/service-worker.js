@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/thetagamma-web/precache-manifest.1403dffbba3a8a2d9d46daebe42fa20e.js"
+  "/thetagamma-web/precache-manifest.b222b9a8431b7becdee70ab5e5e76149.js"
 );
 
 workbox.clientsClaim();

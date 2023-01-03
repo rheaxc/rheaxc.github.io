@@ -29,7 +29,7 @@ const Companies = () => {
   const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10 , image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
 
   return (
-    <div class="company-container">
+    <div className="company-container">
       <h2 className = "company-header"> We Work Here: </h2>
       <FastMarquee
         speed={60}
@@ -40,7 +40,7 @@ const Companies = () => {
         className= "company-marquee"
         >
         {firstrow.map((image) => (
-          <img src={image} alt="companies" class="company-logo"></img>
+          <img src={image} alt="companies" className="company-logo"></img>
         ))}
       </FastMarquee>
       </div>

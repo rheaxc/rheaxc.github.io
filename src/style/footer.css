@@ -12,8 +12,8 @@ img{
 }
 .white{
   color: white;
-    font-family: monospace;
-    padding-left: 1em;
+  font-family: monospace;
+  padding-left: 1em;
 }
 
 .hover-3-title{
@@ -86,7 +86,6 @@ img{
     transition: all 0.3s;
     text-decoration: none;
     color: white;
-    font-size: 30px;
   }
 
   .hover-3-description:hover{

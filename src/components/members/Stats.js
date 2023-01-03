@@ -24,7 +24,7 @@ class Stats extends React.Component {
       <div className = 'stat-container'>
         <div className='stat-values'>
             <div className = 'stat-item'>
-              <div class="stat-number">
+              <div className="stat-number">
                   <h1 className = "stat-plus"> + </h1>
                 <AnimatedNumber
                   animateToNumber={this.state.members}
@@ -35,7 +35,7 @@ class Stats extends React.Component {
               <p className ="stat-caption"> Active Members </p>
             </div>
             <div className = 'stat-item'>
-              <div class="stat-number">
+              <div className="stat-number">
                 <h1 className = "stat-plus"> + </h1>
                 <AnimatedNumber
                   animateToNumber={this.state.majors}
@@ -46,7 +46,7 @@ class Stats extends React.Component {
               <p className ="stat-caption"> Different Majors </p>
             </div>
             <div className = 'stat-item'>
-              <div class="stat-number">
+              <div className="stat-number">
                 <h1 className = "stat-plus"> % </h1>
                 <AnimatedNumber
                   animateToNumber={this.state.jobs}
@@ -58,7 +58,7 @@ class Stats extends React.Component {
             </div>
         </div>
         <div className = 'stat-paragraph'>
-          <p className='subheader-1'> 
+          <p className='subheader-1'>
           <h1 className='subheader-sub'>Theta Tau is</h1> first and foremost a <b>brotherhood</b> of
             engineers. Being a brother of Theta Tau means that you
             have a community of brilliant men AND women not only on
@@ -68,7 +68,7 @@ class Stats extends React.Component {
             network that permeates through your academic,
             professional, and social life.
           </p>
-          <p className='subheader-1'> 
+          <p className='subheader-1'>
             This network is a support structure that you can rely on
             in the face of struggles that you will face in your
             college career. Being a brother means being part of a
@@ -82,7 +82,7 @@ class Stats extends React.Component {
             building a college experience that is incredibly unique
             and valuable.
           </p>
-          <p className='subheader-1'> 
+          <p className='subheader-1'>
             When you ask someone why they joined Theta Tau,
             you'll probably get a diverse set of answers. Some
             join because they seek professional growth. Others
@@ -92,7 +92,7 @@ class Stats extends React.Component {
             oldest and largest Professional Engineering
             Fraternity in the country.
           </p>
-          <p className='subheader-1'> 
+          <p className='subheader-1'>
             However, when you ask someone why they stayed, and
             continue to participate in the Fraternity, you'll
             likely ever hear one answer. <b>It's the people</b>.

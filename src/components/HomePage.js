@@ -18,14 +18,14 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="homepage">
-        <div class = "header">
-          <h1 class= "red title">
+        <div className = "header">
+          <h1 className= "red title">
               THETA TAU THETA GAMMA
           </h1>
         </div>
         <Intro />
         <AboutUs />
-        <div class = "pillars">
+        <div className = "pillars">
           <Brotherhood />
           <Service />
           <Professional />

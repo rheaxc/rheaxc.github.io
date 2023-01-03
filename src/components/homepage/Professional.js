@@ -28,8 +28,8 @@ const Professional = () => {
   const secondrow = [image9, image10, image11, image12, image13, image14, image15, image16];
 
   return (
-    <div class="pillar-item">
-      <div class="pillar-title brotherhood-title">
+    <div className="pillar-item">
+      <div className="pillar-title brotherhood-title">
         PROFESSIONAL
       </div>
       <FastMarquee
@@ -41,7 +41,7 @@ const Professional = () => {
         className = "pillar-marquee"
         >
         {firstrow.map((image) => (
-          <img src={image} alt="Professinal" class="img"></img>
+          <img src={image} alt="Professinal" className="img"></img>
         ))}
       </FastMarquee>
       <FastMarquee
@@ -53,7 +53,7 @@ const Professional = () => {
         className = "pillar-marquee"
         >
         {secondrow.map((image) => (
-          <img src={image} alt="Professional" class="img"></img>
+          <img src={image} alt="Professional" className="img"></img>
         ))}
       </FastMarquee>
       </div>

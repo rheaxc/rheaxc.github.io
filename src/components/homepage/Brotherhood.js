@@ -37,8 +37,8 @@ const Brotherhood = () => {
   const secondrow = [image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23];
 
   return (
-    <div class="pillar-item">
-      <div class="pillar-title brotherhood-title">
+    <div className="pillar-item">
+      <div className="pillar-title brotherhood-title">
         BROTHERHOOD
       </div>
       <FastMarquee
@@ -50,7 +50,7 @@ const Brotherhood = () => {
         className = "pillar-marquee"
         >
         {firstrow.map((image) => (
-          <img src={image} alt="brohood" class="img"></img>
+          <img src={image} alt="brohood" className="img"></img>
         ))}
       </FastMarquee>
       <FastMarquee
@@ -62,7 +62,7 @@ const Brotherhood = () => {
         className = "pillar-marquee"
         >
         {secondrow.map((image) => (
-          <img src={image} alt="brohood" class="img"></img>
+          <img src={image} alt="brohood" className="img"></img>
         ))}
       </FastMarquee>
       </div>

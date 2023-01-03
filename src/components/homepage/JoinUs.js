@@ -16,15 +16,15 @@ class JoinUs extends React.Component {
 
   render() {
     return (
-        <div class = "join-us-container">
-          <div class="container-fluid p-0">
+        <div className = "join-us-container">
+          <div className="container-fluid p-0">
 
-          <div class="hover hover-3 text-white rounded">
-            <img class="img-fluid of" src={bottom} />
-            <div class="hover-overlay"></div>
-                <div class="hover-3-content px-5 py-4">
-                    <h3 class="hover-3-title white text-uppercase font-weight-bold mb-1">JOIN THE BROTHERHOOD</h3>
-                    <Link to='/rush' class= "hover-3-description small text-uppercase mb-0"> RUSH > </Link>
+          <div className="hover hover-3 text-white rounded">
+            <img className="img-fluid of" src={bottom} />
+            <div className="hover-overlay"></div>
+                <div className="hover-3-content px-5 py-4">
+                    <h3 className="hover-3-title white text-uppercase font-weight-bold mb-1">JOIN THE BROTHERHOOD</h3>
+                    <Link to='/rush' className= "hover-3-description small text-uppercase mb-0"> RUSH > </Link>
                 </div>
             </div>
           </div>
@@ -35,4 +35,3 @@ class JoinUs extends React.Component {
 }
 
 export default JoinUs;
-

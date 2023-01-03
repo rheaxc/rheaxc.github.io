@@ -13,9 +13,9 @@ class Intro extends React.Component {
 
   render() {
     return (
-      <div class = "intro">
+      <div className = "intro">
         <p> More than a fraternity, we are a&nbsp;
-        <span class = "red" >
+        <span className = "red" >
           <Typed
             strings =  {this.state.strings}
             typeSpeed = {70}

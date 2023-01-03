@@ -7,8 +7,10 @@
 
 html {
     background-color: #white;
-    font-family: Helvetica, Arial, sans-serif, monospace;
     overflow-x: hidden;
+}
+.content-wrapper{
+  font-family: Verdana;
 }
 
 body {
