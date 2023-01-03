@@ -404,12 +404,12 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/28.eab8e970.jpg"
   },
   {
-    "revision": "adef0df14093a4ab83ff5c61f9a9a0a0",
-    "url": "/thetagamma-web/static/media/29.adef0df1.jpg"
-  },
-  {
     "revision": "2ef3d9a5d1a77bd5963092507a9bf0e6",
     "url": "/thetagamma-web/static/media/27.2ef3d9a5.jpg"
+  },
+  {
+    "revision": "adef0df14093a4ab83ff5c61f9a9a0a0",
+    "url": "/thetagamma-web/static/media/29.adef0df1.jpg"
   },
   {
     "revision": "158bc2b2d152235bc925b46f247a46e5",
@@ -464,36 +464,36 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/2.05a84c6c.jpg"
   },
   {
-    "revision": "bf9f00d309f31688bbb550ede2bfd598",
-    "url": "/thetagamma-web/static/media/13.bf9f00d3.jpg"
-  },
-  {
     "revision": "6e69ff5dbc491ea07c48016e1abae55e",
     "url": "/thetagamma-web/static/media/9.6e69ff5d.jpg"
   },
   {
-    "revision": "4fe76caf561c0f076428982c5a9e2318",
-    "url": "/thetagamma-web/static/media/19.4fe76caf.jpg"
+    "revision": "bf9f00d309f31688bbb550ede2bfd598",
+    "url": "/thetagamma-web/static/media/13.bf9f00d3.jpg"
   },
   {
     "revision": "0976f25ce009b890083812052bf07cff",
     "url": "/thetagamma-web/static/media/18.0976f25c.jpg"
   },
   {
-    "revision": "6fb24aa2ecc2d60eb2002bf1d5c5e56a",
-    "url": "/thetagamma-web/static/media/5.6fb24aa2.jpg"
+    "revision": "4fe76caf561c0f076428982c5a9e2318",
+    "url": "/thetagamma-web/static/media/19.4fe76caf.jpg"
   },
   {
     "revision": "f8bc75ed6860894d78a6a2877e154250",
     "url": "/thetagamma-web/static/media/12.f8bc75ed.jpg"
   },
   {
-    "revision": "2f66ad0dc84add725410772d572972eb",
-    "url": "/thetagamma-web/static/media/11.2f66ad0d.jpg"
+    "revision": "6fb24aa2ecc2d60eb2002bf1d5c5e56a",
+    "url": "/thetagamma-web/static/media/5.6fb24aa2.jpg"
   },
   {
     "revision": "3f432c55d56c41e7114580abbab57af5",
     "url": "/thetagamma-web/static/media/10.3f432c55.jpg"
+  },
+  {
+    "revision": "2f66ad0dc84add725410772d572972eb",
+    "url": "/thetagamma-web/static/media/11.2f66ad0d.jpg"
   },
   {
     "revision": "41ee72e7627324ab294581e1af72193c",
