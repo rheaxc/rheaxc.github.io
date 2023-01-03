@@ -376,12 +376,12 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/rush_vid3.88d2b8d5.MOV"
   },
   {
-    "revision": "f057846f273da268a409754dfbd1598f",
-    "url": "/thetagamma-web/static/media/7.f057846f.jpg"
-  },
-  {
     "revision": "ef7700b04f9a0b0229a3012f888e1bb2",
     "url": "/thetagamma-web/static/media/6.ef7700b0.jpg"
+  },
+  {
+    "revision": "f057846f273da268a409754dfbd1598f",
+    "url": "/thetagamma-web/static/media/7.f057846f.jpg"
   },
   {
     "revision": "e2d28864576da2dfabcef7c85eeff77e",
@@ -400,12 +400,12 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/24.502c416c.jpg"
   },
   {
-    "revision": "eab8e9709d66dd9fea93339e7328152a",
-    "url": "/thetagamma-web/static/media/28.eab8e970.jpg"
-  },
-  {
     "revision": "2ef3d9a5d1a77bd5963092507a9bf0e6",
     "url": "/thetagamma-web/static/media/27.2ef3d9a5.jpg"
+  },
+  {
+    "revision": "eab8e9709d66dd9fea93339e7328152a",
+    "url": "/thetagamma-web/static/media/28.eab8e970.jpg"
   },
   {
     "revision": "adef0df14093a4ab83ff5c61f9a9a0a0",
@@ -432,12 +432,12 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/20.751a3663.jpg"
   },
   {
-    "revision": "fc0c3cc13a730ad7f2b6951308610cc0",
-    "url": "/thetagamma-web/static/media/26.fc0c3cc1.jpg"
-  },
-  {
     "revision": "c870f72172d38de9916bfdf3e26384e9",
     "url": "/thetagamma-web/static/media/23.c870f721.jpg"
+  },
+  {
+    "revision": "fc0c3cc13a730ad7f2b6951308610cc0",
+    "url": "/thetagamma-web/static/media/26.fc0c3cc1.jpg"
   },
   {
     "revision": "9870ccde5b5144f85d25e2ff3b727ecb",
@@ -452,20 +452,20 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/3.aa004e9c.jpg"
   },
   {
-    "revision": "ea9eef9ec6dc03efc2098b3632f7813e",
-    "url": "/thetagamma-web/static/media/14.ea9eef9e.jpg"
-  },
-  {
     "revision": "1bf74d10c0b1e76a13910f5be9bfb272",
     "url": "/thetagamma-web/static/media/15.1bf74d10.jpg"
   },
   {
-    "revision": "05a84c6cdc783842258ad1b1762422ae",
-    "url": "/thetagamma-web/static/media/2.05a84c6c.jpg"
+    "revision": "ea9eef9ec6dc03efc2098b3632f7813e",
+    "url": "/thetagamma-web/static/media/14.ea9eef9e.jpg"
   },
   {
     "revision": "6e69ff5dbc491ea07c48016e1abae55e",
     "url": "/thetagamma-web/static/media/9.6e69ff5d.jpg"
+  },
+  {
+    "revision": "05a84c6cdc783842258ad1b1762422ae",
+    "url": "/thetagamma-web/static/media/2.05a84c6c.jpg"
   },
   {
     "revision": "bf9f00d309f31688bbb550ede2bfd598",
@@ -488,12 +488,12 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/5.6fb24aa2.jpg"
   },
   {
-    "revision": "3f432c55d56c41e7114580abbab57af5",
-    "url": "/thetagamma-web/static/media/10.3f432c55.jpg"
-  },
-  {
     "revision": "2f66ad0dc84add725410772d572972eb",
     "url": "/thetagamma-web/static/media/11.2f66ad0d.jpg"
+  },
+  {
+    "revision": "3f432c55d56c41e7114580abbab57af5",
+    "url": "/thetagamma-web/static/media/10.3f432c55.jpg"
   },
   {
     "revision": "41ee72e7627324ab294581e1af72193c",
