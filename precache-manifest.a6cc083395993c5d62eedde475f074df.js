@@ -428,12 +428,12 @@ self.__precacheManifest = [
     "url": "/thetagamma-web/static/media/17.39b44b9b.jpg"
   },
   {
-    "revision": "751a36632dfdb845cc6baa3c5c8dac0a",
-    "url": "/thetagamma-web/static/media/20.751a3663.jpg"
-  },
-  {
     "revision": "c870f72172d38de9916bfdf3e26384e9",
     "url": "/thetagamma-web/static/media/23.c870f721.jpg"
+  },
+  {
+    "revision": "751a36632dfdb845cc6baa3c5c8dac0a",
+    "url": "/thetagamma-web/static/media/20.751a3663.jpg"
   },
   {
     "revision": "fc0c3cc13a730ad7f2b6951308610cc0",
