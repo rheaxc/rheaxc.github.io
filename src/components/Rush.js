@@ -7,10 +7,10 @@ import '../style/rush.css'
 import rush_schedule from '../images/rush/rush_schedule.jpeg';
 import rush from '../images/footer/rush.jpg'
 
-const handleClick = () => 
+const handleClick = () =>
 {
-  window.open("https://forms.gle/a9zmfc9f5i5hgP4m7")
-}; 
+  window.open("https://forms.gle/etKeoSayd6oeYkiD6")
+};
 
 class Rush extends React.Component {
   constructor() {
@@ -28,7 +28,7 @@ class Rush extends React.Component {
                 <img className = "rush-image" src = {rush_schedule} alt = "rush!"></img>
             </div>
             <button className = "interest-links" onClick ={handleClick}>
-              Interest Form
+              Apply Here
             </button>
         </div>
         <Video />
