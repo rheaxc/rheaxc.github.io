@@ -1,11 +1,19 @@
 .rush-video-wrapper{
   height: 30em;
   width: auto;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
 }
 
 .rush-video{
   padding-top: 10em;
   padding-bottom: 10em;
+}
+
+.video-item{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #883a3a;
 }

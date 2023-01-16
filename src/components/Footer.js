@@ -26,7 +26,7 @@ class Footer extends React.Component {
               {(this.props.page === 'homepage') ? (
                 <div className="hover-3-content px-5 py-4">
                   <h3 className="hover-3-title black text-uppercase font-weight-bold mb-1">JOIN THE BROTHERHOOD</h3>
-                  <Link to='/rush' className= "hover-3-description text-uppercase mb-0"> RUSH > </Link>
+                  <Link to='/rush' target="_top" className= "hover-3-description text-uppercase mb-0"> RUSH > </Link>
                 </div>
               ) : (
                 <div className="contact-info-content px-5 py-4">
