@@ -12,18 +12,15 @@ if you have any questions, reach out to: rhea chowdhury (rheaxc@umich.edu)
 ## in progress:
 * [high priority] move to theta tau org instead of rhea's github 
 * instagram link if click logo on top right of footer
-* clicking rush in footer takes to bottom of the page
-* shorter + local rush videos
-* faq in rush page goes to monopoly street colors
-* all descriptions
+* [rhea] clicking rush in footer takes to bottom of the page
 * pretty on the phone
 * [members] family tree
-* documentation + transition docs
+* [nick] documentation + transition docs
+* [hari] [internal use] brother login
 
 ## Planned Features Wishlist:
 (Not in any particular order)
 
-* [internal use] brother login
 * [internal use] calendar backed by gcal
 * [internal use] photo album page
 * [internal use] event creation
