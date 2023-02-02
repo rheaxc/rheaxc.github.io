@@ -30,7 +30,7 @@ class Committees extends React.Component {
               <p className='subheader-2'> There are many committiees within Theta Tau that organize and plan all internal and external events.
                     These committiees are what make Theta Tau run and a key aspect is creating a tight night community wihtin the organization.</p>
               <p className='subheader-2'> Check below to see all the committies and a what they do!</p>
-              <p style={{ display: "none" }}>Go to the second floor of the worst looking building on Campus</p> 
+              <p style={{ display: "none" }}>To find your next clue go to the second floor of the worst looking building on Campus</p> 
             </div>
             <div className='com-icons'>
             {/*icons for each committee with Name with image in background / committee head / description */}
