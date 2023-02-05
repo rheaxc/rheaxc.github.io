@@ -86,6 +86,11 @@ export default function Navbar() {
               Join the Family
             </Link>
           </li>
+          <li className = "navbar-item">
+            <Link to= "/signin">
+                Sign in Bitch
+            </Link>
+          </li>
         </div>
       </div>
 
