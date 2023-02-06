@@ -5,7 +5,7 @@ import '../style/signin.css';
 const SignIn = () => {
     const [isMember, setIsMember] = useState(false);
     const [user, setUser] = useState(null);
-    let Name = '';
+    const [name, setName] = useState('');
     useEffect(() => {
         const unsubscribe = supabase.auth.onAuthStateChange((event, session) => {
             if(event === 'SIGNED_IN'){
@@ -27,7 +27,7 @@ const SignIn = () => {
                 if(data.length > 0){
                     setIsMember(true);
                 }
-                Name = data[0].firstName + data[0].lastName;
+                setName(data[0].firstName + " " + data[0].lastName);
             }
             
 
@@ -54,7 +54,7 @@ const SignIn = () => {
             {
             user ? (  
                 <div className='logOut'>
-                    <p>Welcome, Name!</p> 
+                    <p>Welcome, {name}!</p> 
                     {isMember ? (
                         <p>You are a member!</p>
                     ) : (
