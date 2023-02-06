@@ -3,29 +3,46 @@ import { supabase } from '../client';
 import '../style/signin.css';
 
 const SignIn = () => {
-    const [user, setUser] = useState(null);
     const [isMember, setIsMember] = useState(false);
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const unsubscribe = supabase.auth.onAuthStateChange((event, session) => {
+            if(event === 'SIGNED_IN'){
+                setUser(session.user);
+            }
+          });
+      }, []);
 
     useEffect (() => {
-      console.log(user);
-      const checkIfUserIsMember = async () => {
-        if (user) {
-          const { body } = await supabase.from('members').select().where({ email: user.email }).first();
-          setIsMember(!!body);
-        }
-      };
-      console.log(user);
+        const checkIfUserIsMember = async () => {
+
+            if (user != null) {
+                console.log(user.email)
+                const { data, error } = await supabase.from('Members')
+                .select('*')
+                .eq('id', user.id);
+                console.log(error);
+                console.log(user.id);
+                console.log(data);
+                if(data.length > 0){
+                    setIsMember(true);
+                }
+            }
+            
+
+        };
       checkIfUserIsMember();
     }, [user]);
 
+
     const handleGoogleSignIn = async () => {
-      const { user,  error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
             redirectTo: 'http://localhost:3000/signin'
         }
       });
-      setUser(user);
     };
 
     const handleSignOut = async () => {
@@ -34,10 +51,9 @@ const SignIn = () => {
 
     return (
         <div className="signin">
-            <p> Hi </p> 
             {
             user ? (  
-                <>
+                <div className='logOut'>
                     <p>Welcome, {user.email}!</p> 
                     {isMember ? (
                         <p>You are a member!</p>
@@ -45,7 +61,7 @@ const SignIn = () => {
                         <p>You are not a member.</p>
                     )}
                     <button onClick={handleSignOut}>Sign out</button>
-                </>
+                </div>
             ) : (
                 <>
                     <button onClick={handleGoogleSignIn}>Sign in with Google</button>
