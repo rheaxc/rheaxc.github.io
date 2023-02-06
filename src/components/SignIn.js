@@ -5,7 +5,8 @@ import '../style/signin.css';
 const SignIn = () => {
     const [isMember, setIsMember] = useState(false);
     const [user, setUser] = useState(null);
-    let Name = '';
+    const [unique, setUnique] = useState(null);
+    const [name, setName] = useState('');
     useEffect(() => {
         const unsubscribe = supabase.auth.onAuthStateChange((event, session) => {
             if(event === 'SIGNED_IN'){
@@ -15,25 +16,39 @@ const SignIn = () => {
       }, []);
 
     useEffect (() => {
-        const checkIfUserIsMember = async () => {
-
+        const convertEmailtoUnique = async () => {
             if (user != null) {
-                console.log(user.email)
-                const { data, error } = await supabase.from('Members')
+                const { data, error } = await supabase.from('Emails')
                 .select('*')
-                .eq('id', user.id);
-                console.log(data);
-                
-                if(data.length > 0){
-                    setIsMember(true);
-                }
-                Name = data[0].firstName + data[0].lastName;
+                .eq('email', user.email); 
+                console.log(data)
+                var uniquename = data[0].uniquename
+                setUnique(uniquename)
             }
-            
-
         };
-      checkIfUserIsMember();
-    }, [user]);
+        convertEmailtoUnique();
+      }, [user]);
+    
+      useEffect (() => {
+        const checkIfUserIsMember = async () => {
+          console.log(unique)
+          const { data: emailData , error: emailError } = await supabase.from('Brothers')
+            .select('*')
+            .eq('userid', unique);
+    
+          console.log(emailData)
+
+          if(emailData.length > 0){
+            setIsMember(true);
+            }
+
+          setName(emailData[0].firstname + " " + emailData[0].lastname);
+        };
+    
+        if (unique) {
+          checkIfUserIsMember();
+        }
+      }, [unique]);
 
 
     const handleGoogleSignIn = async () => {
@@ -54,7 +69,7 @@ const SignIn = () => {
             {
             user ? (  
                 <div className='logOut'>
-                    <p>Welcome, Name!</p> 
+                    <p>Welcome, {name}!</p> 
                     {isMember ? (
                         <p>You are a member!</p>
                     ) : (
