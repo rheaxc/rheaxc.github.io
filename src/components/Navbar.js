@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../style/nav.css";
 import logo from "../images/tht-logo.png";
+import {user} from "../components/SignIn";
 
 export default function Navbar() {
 
@@ -88,7 +89,7 @@ export default function Navbar() {
           </li>
           <li className = "navbar-item">
             <Link to= "/signin">
-                Sign in Bitch
+               Sign In
             </Link>
           </li>
         </div>
