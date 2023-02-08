@@ -28,7 +28,7 @@ class Rush extends React.Component {
                 <img className = "rush-image" src = {website_graphic} alt = "rush!"></img>
             </div>
             <button className = "interest-links" onClick ={handleClick}>
-              Apply Here
+              Interest Form
             </button>
         </div>
         <Video />
