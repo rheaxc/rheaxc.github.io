@@ -33,13 +33,19 @@ class Footer extends React.Component {
                 </div>
               ) : (
                 <div className="contact-info-content px-5 py-4">
-                  <h3 className="hover-3-title white text-uppercase font-weight-bold mb-1">CONTACT US</h3>
+                  <h3 className="hover-3-title white text-uppercase font-weight-bold mb-1" style = {{position: 'relative'}}>CONTACT US</h3>
                   <a href="mailto:tht-regents@umich.edu" className= "hover-3-description small text-uppercase mb-0"> REGENT & VICE REGENT  </a>
                   <a href="mailto:tht-eboard@umich.edu" className= "hover-3-description small text-uppercase mb-0"> EXECUTIVE BOARD  </a>
                   <a href="mailto:tht-corsec@umich.edu" className= "hover-3-description small text-uppercase mb-0"> ALUMNI & INTERCHAPTER RELATIONS  </a>
                   <a href="mailto:tht-corporate@umich.edu" className= "hover-3-description small text-uppercase mb-0"> COOPORATE & SPONSORSHIP EVENTS  </a>
                   <a href="https://www.instagram.com/sawoongmin/">
-                    <img src={process.env.PUBLIC_URL + '/src/ig.png'} alt="Instagram"></img>
+                    <img src={ig} alt="Instagram" style={{
+                        top: '0',
+                        right: '0',
+                        width: '100px',
+                        height: '100px',
+                        borderRadius: '50%'
+                      }}></img>
                   </a>
                 </div>
               ) }
