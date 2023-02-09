@@ -38,7 +38,7 @@ class Footer extends React.Component {
                   <a href="mailto:tht-eboard@umich.edu" className= "hover-3-description small text-uppercase mb-0"> EXECUTIVE BOARD  </a>
                   <a href="mailto:tht-corsec@umich.edu" className= "hover-3-description small text-uppercase mb-0"> ALUMNI & INTERCHAPTER RELATIONS  </a>
                   <a href="mailto:tht-corporate@umich.edu" className= "hover-3-description small text-uppercase mb-0"> COOPORATE & SPONSORSHIP EVENTS  </a>
-                  <a href="https://www.instagram.com/sawoongmin/">
+                  <a href="https://www.instagram.com/thetatau_umich/">
                     <img src={ig} alt="Instagram" style={{
                         top: '0',
                         right: '0',
