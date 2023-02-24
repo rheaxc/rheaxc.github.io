@@ -10,11 +10,14 @@ export default function Navbar() {
   const [name, setName] = useState('');
 
   useEffect(() => {
-    const fetchCurrentUser = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      setUser(user);
-    };
-    fetchCurrentUser();
+    const unsubscribe = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_OUT') {
+        setUser(null);
+        setName('');
+      } else if (event === 'SIGNED_IN') {
+        setUser(session.user);
+      }
+      });
   }, []);
 
   useEffect (() => {

@@ -60,9 +60,13 @@ const SignIn = () => {
       });
     };
 
-    const handleSignOut = async () => {
-        const { error } = await supabase.auth.signOut();
-    };
+    async function handleSignOut() {
+        const { error } = await supabase.auth.signOut()
+        if (!error) {
+            setUser(null);
+            setIsMember(false);
+        }
+      }
 
     return (
         <div className="signin">
