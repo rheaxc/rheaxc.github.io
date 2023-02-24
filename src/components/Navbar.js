@@ -9,21 +9,27 @@ export default function Navbar() {
   const [name, setName] = useState('');
 
   useEffect(() => {
-    const fetchCurrentUser = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      setUser(user);
-    };
-    fetchCurrentUser();
+    const unsubscribe = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_OUT') {
+        setUser(null);
+        setName('');
+      } else if (event === 'SIGNED_IN') {
+        setUser(session.user);
+      }
+      });
   }, []);
 
   useEffect (() => {
     const checkIfUserIsMember = async () => {
 
         if (user != null) {
-            const { data, error } = await supabase.from('Members')
+            const { data, error } = await supabase.from('Brothers')
             .select('*')
-            .eq('id', user.id); 
-            setName(data[0].firstName);
+            .eq('email', user.email); 
+
+            if(data.length > 0){
+              setName(data[0].firstname);
+            }
         }
     };
   checkIfUserIsMember();

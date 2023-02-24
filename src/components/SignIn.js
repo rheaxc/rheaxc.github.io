@@ -19,15 +19,15 @@ const SignIn = () => {
 
             if (user != null) {
                 console.log(user.email)
-                const { data, error } = await supabase.from('Members')
+                const { data, error } = await supabase.from('Brothers')
                 .select('*')
-                .eq('id', user.id);
+                .eq('email', user.email);
                 console.log(data);
                 
                 if(data.length > 0){
                     setIsMember(true);
+                    setName(data[0].firstname + " " + data[0].lastname);
                 }
-                setName(data[0].firstName + " " + data[0].lastName);
             }
             
 
@@ -45,9 +45,13 @@ const SignIn = () => {
       });
     };
 
-    const handleSignOut = async () => {
-        const { error } = await supabase.auth.signOut();
-    };
+    async function handleSignOut() {
+        const { error } = await supabase.auth.signOut()
+        if (!error) {
+            setUser(null);
+            setIsMember(false);
+        }
+      }
 
     return (
         <div className="signin">
