@@ -26,11 +26,9 @@ const SignIn = () => {
                 
                 if(data.length > 0){
                     setIsMember(true);
-                    setName(data[0].firstname + " " + data[0].lastname);
+                    setName("Brother" + " " + data[0].lastname);
                 }
             }
-            
-
         };
       checkIfUserIsMember();
     }, [user]);
@@ -58,9 +56,11 @@ const SignIn = () => {
             {
             user ? (  
                 <div className='logOut'>
-                    <p>Welcome, {name}!</p> 
                     {isMember ? (
-                        <p>You are a member!</p>
+                        <>
+                            <p>Welcome, {name}!</p> 
+                            <p>You are a member!</p>
+                        </>
                     ) : (
                         <p>You are not a member.</p>
                     )}
