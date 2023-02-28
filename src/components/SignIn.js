@@ -73,9 +73,11 @@ const SignIn = () => {
             {
             user ? (  
                 <div className='logOut'>
-                    <p>Welcome, {name}!</p> 
                     {isMember ? (
-                        <p>You are a member!</p>
+                        <>
+                            <p>Welcome, {name}!</p> 
+                            <p>You are a member!</p>
+                        </>
                     ) : (
                         <p>You are not a member.</p>
                     )}
