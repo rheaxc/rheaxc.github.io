@@ -83,18 +83,18 @@ const SignIn = () => {
             user ? (  
                 <div className='logOut'>
                     {isMember ? (
-                        <>
+                        <div className='member'>
                             <p>Welcome, {name}!</p> 
                             <p>You are a member!</p>
                             <Dashboard user={user}/>
-                        </>
+                        </div>
                     ) : (
-                        <>
+                        <div>
                             <p>You are not a member.</p>
                             <Dashboard user={user}/>
-                        </>
+                        </div>
                     )}
-                    <button onClick={handleSignOut}>Sign out</button>
+                    <button className= 'signOutButton' onClick={handleSignOut}>Sign out</button>
                 </div>
             ) : (
                 <>
