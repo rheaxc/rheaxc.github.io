@@ -38,7 +38,7 @@ function Dashboard({user}) {
     return (
         <div className = "dashboard">
             <h1>Dashboard</h1>
-            <button style={{width: 100, height: 50}} onClick={handleClick}>Show Events</button>
+            <button onClick={handleClick}>Show Events</button>
         </div>
     );
 
