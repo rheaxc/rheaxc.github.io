@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../client';
+import { useSession , useSessionContext} from '@supabase/auth-helpers-react';
 import '../style/signin.css';
+import Dashboard from './Dashboard';
 
 const SignIn = () => {
     const [isMember, setIsMember] = useState(false);
     const [user, setUser] = useState(null);
     const [name, setName] = useState('');
+
+ 
     useEffect(() => {
         const unsubscribe = supabase.auth.onAuthStateChange((event, session) => {
             if(event === 'SIGNED_IN'){
@@ -38,7 +42,8 @@ const SignIn = () => {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-            redirectTo: 'http://localhost:3000/signin'
+            redirectTo: 'http://localhost:3000/signin',
+            scopes: 'https://www.googleapis.com/auth/calendar'
         }
       });
     };
@@ -51,6 +56,10 @@ const SignIn = () => {
         }
       }
 
+    async function getEventsFromCalendar() {
+        await fetch()
+    }
+
     return (
         <div className="signin">
             {
@@ -60,9 +69,13 @@ const SignIn = () => {
                         <>
                             <p>Welcome, {name}!</p> 
                             <p>You are a member!</p>
+                            <Dashboard user={user}/>
                         </>
                     ) : (
-                        <p>You are not a member.</p>
+                        <>
+                            <p>You are not a member.</p>
+                            <Dashboard user={user}/>
+                        </>
                     )}
                     <button onClick={handleSignOut}>Sign out</button>
                 </div>
