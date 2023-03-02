@@ -1,5 +1,18 @@
-.dashboard{
+.dashboard-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dashboard-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

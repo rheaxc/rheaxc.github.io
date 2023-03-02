@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../client';
 import { useSession , useSessionContext} from '@supabase/auth-helpers-react';
 import '../style/signin.css';
-import Dashboard from './Dashboard';
+import Dashboard from './signin/Dashboard';
 
 const SignIn = () => {
     const [isMember, setIsMember] = useState(false);
@@ -91,15 +91,17 @@ const SignIn = () => {
                     ) : (
                         <div>
                             <p>You are not a member.</p>
-                            <Dashboard user={user}/>
                         </div>
                     )}
                     <button className= 'signOutButton' onClick={handleSignOut}>Sign out</button>
                 </div>
             ) : (
-                <>
-                    <button onClick={handleGoogleSignIn}>Sign in with Google</button>
-                </>
+                <div className= "LogIn">
+                    <h1 className='LogIn-Title'>
+                        Brother Login
+                    </h1>
+                    <button onClick={handleGoogleSignIn}>Sign In</button>
+                </div>
             )}
         </div>
     );
