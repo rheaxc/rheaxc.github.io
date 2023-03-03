@@ -1,4 +1,5 @@
 import React from 'react'
+import './style/dashbutton.css'
 
 const handleClick = (link) =>
 {
@@ -10,7 +11,7 @@ export default function DashButton({link , text}) {
 
   return (
   
-    <button onClick ={() => handleClick(link)}>
+    <button className= 'dashbutton' onClick ={() => handleClick(link)}>
         {text}
     </button>
   )

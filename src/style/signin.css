@@ -34,3 +34,16 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+.signButton{
+    color: white;
+    background-color:#883a3a;
+    font-size: 30px;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+.signButton:hover{
+    opacity: .8;
+}
