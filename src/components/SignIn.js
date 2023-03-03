@@ -42,7 +42,6 @@ const SignIn = () => {
         provider: 'google',
         options: {
             redirectTo: 'http://localhost:3000/signin',
-            scopes: 'https://www.googleapis.com/auth/calendar'
         }
       });
     };
@@ -54,11 +53,7 @@ const SignIn = () => {
             setIsMember(false);
         }
       }
-
-    async function getEventsFromCalendar() {
-        await fetch()
-    }
-
+      
     return (
         <div className="signin">
             {
@@ -66,23 +61,23 @@ const SignIn = () => {
                 <div className='logOut'>
                     {isMember ? (
                         <div className='member'>
-                            <p>Welcome, {name}!</p> 
-                            <p>You are a member!</p>
-                            <Dashboard user={user}/>
+                            <h1>Welcome, {name}!</h1> 
+                            <h2>You are a member!</h2>
+                            <Dashboard/>
                         </div>
                     ) : (
                         <div>
                             <p>You are not a member.</p>
                         </div>
                     )}
-                    <button className= 'signOutButton' onClick={handleSignOut}>Sign out</button>
+                    <button className= 'signButton' onClick={handleSignOut}>Sign out</button>
                 </div>
             ) : (
                 <div className= "LogIn">
                     <h1 className='LogIn-Title'>
                         Brother Login
                     </h1>
-                    <button onClick={handleGoogleSignIn}>Sign In</button>
+                    <button className= 'signButton' onClick={handleGoogleSignIn}>Sign In</button>
                 </div>
             )}
         </div>
