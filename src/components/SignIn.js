@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../client';
-import { useSession , useSessionContext} from '@supabase/auth-helpers-react';
 import '../style/signin.css';
 import Dashboard from './signin/Dashboard';
 
