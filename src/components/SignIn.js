@@ -69,7 +69,7 @@ const SignIn = () => {
             setUser(null);
             setIsMember(false);
         }
-      }
+    }
       
     return (
         <div className="signin">
