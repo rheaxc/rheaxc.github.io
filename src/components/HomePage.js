@@ -23,7 +23,7 @@ class HomePage extends React.Component {
               THETA TAU THETA GAMMA
           </h1>
         </div>
-        <Intro />
+        <Intro /> 
         <AboutUs />
         <div className = "pillars">
           <Brotherhood />
