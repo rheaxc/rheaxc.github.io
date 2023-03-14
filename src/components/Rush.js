@@ -4,12 +4,12 @@ import Faq from './rush/FAQ.js';
 import Footer from './Footer.js'
 import '../style/rush.css'
 
-import rush_schedule from '../images/rush/rush_schedule.jpeg';
+import website_graphic from '../images/rush/website-graphic.jpeg'
 import rush from '../images/footer/rush.jpg'
 
 const handleClick = () =>
 {
-  window.open("https://forms.gle/etKeoSayd6oeYkiD6")
+  window.open("https://forms.gle/xT7E9WeYxUG5cLoA9")
 };
 
 class Rush extends React.Component {
@@ -25,10 +25,10 @@ class Rush extends React.Component {
       <div className="rush">
         <div className='interest'>
             <div className  = "rush-schedule">
-                <img className = "rush-image" src = {rush_schedule} alt = "rush!"></img>
+                <img className = "rush-image" src = {website_graphic} alt = "rush!"></img>
             </div>
             <button className = "interest-links" onClick ={handleClick}>
-              Apply Here
+              Interest Form
             </button>
         </div>
         <Video />
