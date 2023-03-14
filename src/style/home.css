@@ -43,3 +43,50 @@
   display: flex;
   flex-direction: row;
 }
+
+@media (max-width: 400px) {
+  .title{
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .homepage{
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .intro{
+    font-size: 8px;
+    font-weight: bold;
+  }
+  
+  .umich{
+    text-align: center;
+    font-size: 0.75em;
+    font-family: "Copperplate", fantasy;
+  }
+  
+  
+   /* this is the style to keep pillars uniform */
+  .pillar-item{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .pillar-title{
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #883a3a;
+  }
+  
+  .pillar-images{
+    display: flex;
+    flex-direction: row;
+  }
+}

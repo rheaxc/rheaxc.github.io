@@ -67,3 +67,80 @@ li {
 .image:hover{
   opacity: .9;
 }
+
+
+@media (max-width: 400px) {
+  .navigation {
+    background-color: white;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .navbar-item{
+    padding-right: 1%;
+    padding-left: 1%;
+    text-decoration: none;
+  }
+  
+  .nav-container {
+    padding-top: 0.2%;
+    padding-right: 1%;
+    width: 50%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  
+  .image{
+    max-height: 100%;
+    width: auto;
+    height: 3em;
+  }
+  
+  .logo{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    height: 5em;
+  }
+  
+  .umich{
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color:  #883a3a;
+    font-weight: bold;
+    font-size: 8px;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .navbar-item a:hover {
+    color:  #883a3a;
+    opacity: .75;
+  }
+  
+  .image:hover{
+    opacity: .9;
+  }
+}
