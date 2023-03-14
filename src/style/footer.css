@@ -78,7 +78,8 @@ img{
     z-index: 99;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .hover-3-description {
@@ -91,6 +92,10 @@ img{
 
   .hover-3-description:hover{
     color: rgb(187, 175, 175);
+  }
+
+  .instagram:hover{
+    opacity: 0;
   }
 
   .hover-3 img {
@@ -125,11 +130,17 @@ img{
     text-align: left;
   }
 
-  .instagramLogo{
+  .insta{
     flex:1;
     justify-content: flex-end;
   }
 
   .leftContainer{
-    flex:1
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
   }
