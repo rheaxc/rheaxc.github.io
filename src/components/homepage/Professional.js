@@ -27,37 +27,73 @@ const Professional = () => {
   const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8];
   const secondrow = [image9, image10, image11, image12, image13, image14, image15, image16];
 
-  return (
-    <div className="pillar-item">
-      <div className="pillar-title brotherhood-title">
-        PROFESSIONAL
-      </div>
-      <FastMarquee
-        speed={60}
-        delay={0}
-        pauseOnHover
-        direction="left"
-        gradient={false}
-        className = "pillar-marquee"
-        >
-        {firstrow.map((image) => (
-          <img src={image} alt="Professinal" className="img"></img>
-        ))}
-      </FastMarquee>
-      <FastMarquee
-        speed={60}
-        delay={0}
-        pauseOnHover
-        gradient={false}
-        direction="left"
-        className = "pillar-marquee"
-        >
-        {secondrow.map((image) => (
-          <img src={image} alt="Professional" className="img"></img>
-        ))}
-      </FastMarquee>
-      </div>
-    );
+  const mediaQuery = window.matchMedia('(max-width: 400px)')
+  // Check if the media query is true
+  if (mediaQuery.matches) {
+    return (
+      <div className="pillar-item">
+        <div className="pillar-title brotherhood-title">
+          PROFESSIONAL
+        </div>
+        <FastMarquee
+          speed={20}
+          delay={0}
+          pauseOnHover
+          direction="left"
+          gradient={false}
+          className = "mobile-pillar-marquee"
+          >
+          {firstrow.map((image) => (
+            <img src={image} alt="Professinal" className="img"></img>
+          ))}
+        </FastMarquee>
+        <FastMarquee
+          speed={20}
+          delay={0}
+          pauseOnHover
+          gradient={false}
+          direction="left"
+          className = "mobile-pillar-marquee"
+          >
+          {secondrow.map((image) => (
+            <img src={image} alt="Professional" className="img"></img>
+          ))}
+        </FastMarquee>
+        </div>
+      );
+  } else {
+    return (
+      <div className="pillar-item">
+        <div className="pillar-title brotherhood-title">
+          PROFESSIONAL
+        </div>
+        <FastMarquee
+          speed={60}
+          delay={0}
+          pauseOnHover
+          direction="left"
+          gradient={false}
+          className = "pillar-marquee"
+          >
+          {firstrow.map((image) => (
+            <img src={image} alt="Professinal" className="img"></img>
+          ))}
+        </FastMarquee>
+        <FastMarquee
+          speed={60}
+          delay={0}
+          pauseOnHover
+          gradient={false}
+          direction="left"
+          className = "pillar-marquee"
+          >
+          {secondrow.map((image) => (
+            <img src={image} alt="Professional" className="img"></img>
+          ))}
+        </FastMarquee>
+        </div>
+      );
   };
+};
 
 export default Professional;
