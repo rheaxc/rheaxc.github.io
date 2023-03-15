@@ -27,7 +27,7 @@ const Service = () => {
   const secondrow = [image8, image9, image10, image11, image12, image13, image14];
 
 
-  const mediaQuery = window.matchMedia('(max-width: 400px)')
+  const mediaQuery = window.matchMedia('(max-width: 415px)')
   // Check if the media query is true
   if (mediaQuery.matches) {
 

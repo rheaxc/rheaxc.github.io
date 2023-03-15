@@ -27,7 +27,7 @@ const Professional = () => {
   const firstrow = [image1, image2, image3, image4, image5, image6, image7, image8];
   const secondrow = [image9, image10, image11, image12, image13, image14, image15, image16];
 
-  const mediaQuery = window.matchMedia('(max-width: 400px)')
+  const mediaQuery = window.matchMedia('(max-width: 415px)')
   // Check if the media query is true
   if (mediaQuery.matches) {
     return (

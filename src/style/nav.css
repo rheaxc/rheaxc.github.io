@@ -69,7 +69,7 @@ li {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .navigation {
     padding-top: 2px;
     background-color: white;

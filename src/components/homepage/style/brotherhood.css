@@ -15,7 +15,7 @@
   height: 8em;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .brotherhood-title{
     text-align: left;
   }

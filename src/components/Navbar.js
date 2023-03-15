@@ -5,7 +5,7 @@ import logo from "../images/tht-logo.png";
 
 export default function Navbar() {
 
-  const mediaQuery = window.matchMedia('(max-width: 400px)')
+  const mediaQuery = window.matchMedia('(max-width: 415px)')
   // Check if the media query is true
   if (mediaQuery.matches) {
     // Then trigger an alert
