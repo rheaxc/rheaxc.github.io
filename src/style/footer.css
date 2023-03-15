@@ -144,3 +144,14 @@ img{
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: 415px) {
+    .hover-3-title{
+      font-size: 18px;
+    }
+
+    .hover-3-description{
+      font-size: 12px;
+    }
+    
+  }
