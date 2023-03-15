@@ -6,18 +6,19 @@
   height: 20em;
 }
 
+
 .img {
   max-height: 100%;
   width: auto;
 }
 
+.mobile-pillar-marquee {
+  height: 6em;
+}
+
 @media (max-width: 400px) {
   .brotherhood-title{
     text-align: left;
-  }
-  
-  .pillar-marquee{
-    height: 1em;
   }
   
   .img {
