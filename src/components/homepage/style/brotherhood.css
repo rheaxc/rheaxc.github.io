@@ -6,14 +6,13 @@
   height: 20em;
 }
 
-
 .img {
   max-height: 100%;
   width: auto;
 }
 
 .mobile-pillar-marquee {
-  height: 6em;
+  height: 8em;
 }
 
 @media (max-width: 400px) {

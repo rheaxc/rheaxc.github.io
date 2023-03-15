@@ -5,3 +5,7 @@
 .pillar-marquee{
   height: 20em;
 }
+
+.mobile-pillar-marquee {
+  height: 8em;
+}
