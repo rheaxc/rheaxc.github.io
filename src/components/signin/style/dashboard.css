@@ -4,6 +4,7 @@
     justify-content: space-evenly;
     padding-top: 20px;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .dashboard{
@@ -17,4 +18,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 10px;
+}
+
+.events-title{
+    padding-bottom: 20px;
+    padding-left: 100px;
 }
