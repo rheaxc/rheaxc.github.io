@@ -8,12 +8,15 @@ function Dashboard() {
         <div className = "dashboard-container">
             <h1>Dashboard</h1>
             <div className='dashboard'>
-              <div className='dashboard-buttons'>
-                  <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Brother Absence Form"></DashButton>
-                  <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Fraternity Feedback Form"></DashButton>
-                  <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Risk Form"></DashButton>
-                  <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Alumni Direcotry"></DashButton>
-              </div>
+                <div className='events-title'>
+                    <h2>Upcoming Events</h2>
+                </div>
+                <div className='dashboard-buttons'>
+                    <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Brother Absence Form"></DashButton>
+                    <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Fraternity Feedback Form"></DashButton>
+                    <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Risk Form"></DashButton>
+                    <DashButton link="https://forms.gle/pwni41toLsc1ZBpU9" text="Alumni Directory"></DashButton>
+                </div>
             </div>
         </div>
     );
