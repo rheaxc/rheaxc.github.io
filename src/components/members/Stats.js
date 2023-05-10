@@ -9,13 +9,27 @@ import "./style/stats.css";
 class Stats extends React.Component {
   constructor() {
     super();
-    this.state = {
-      fontSize: 60,
-      duration: 1000,
-      members: 70,
-      majors: 15,
-      jobs: 100,
-      states: 100,
+
+    const mediaQuery = window.matchMedia('(max-width: 415px)')
+  // Check if the media query is true
+    if (mediaQuery.matches) {
+      this.state = {
+        fontSize: 40,
+        duration: 1000,
+        members: 70,
+        majors: 15,
+        jobs: 100,
+        states: 100,
+      };
+    } else {
+      this.state = {
+        fontSize: 60,
+        duration: 1000,
+        members: 70,
+        majors: 15,
+        jobs: 100,
+        states: 100,
+      };
     };
   }
 

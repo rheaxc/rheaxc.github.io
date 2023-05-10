@@ -24,3 +24,17 @@
   font-size: 40px;
   padding-bottom: 10px;
 }
+
+.mobile-company-marquee{
+  height:5em;
+  width: auto;
+}
+
+@media (max-width: 415px) {
+  .company-header{
+    padding-left: 1em;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+}
