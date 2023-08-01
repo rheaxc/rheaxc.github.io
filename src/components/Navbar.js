@@ -124,13 +124,6 @@ export default function Navbar() {
             Join the Family
           </Link>
         </li>
-        <li className = "navbar-item">
-          <Link to= "/signin">
-            {
-              user ? ( <p> Hi {name} </p>) : (<p> Sign In </p>)
-            }
-          </Link>
-        </li>
       </div>
     </div>
 
