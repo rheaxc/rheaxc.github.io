@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Members from "./components/Members";
 import Rush from "./components/Rush";
 import HomePage from "./components/HomePage";
+import Events from "./components/Events";
 
 import './style/App.css';
 
@@ -19,6 +20,8 @@ function App() {
                 <Route path="/" element={<HomePage />}/>
 
                 <Route path="/members" element={<Members />}/>
+
+                <Route path="/events" element={<Events />}/>
 
                 <Route path="/rush" element={<Rush />}/>
 
