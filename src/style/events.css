@@ -1,8 +1,21 @@
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 320px;
+    justify-content: space-evenly;
+    height: 20%;
+    background-color: #883a3a;
+    color: white;
+}
 
 .events-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 60px;
+    gap: 30px;
     padding: 20px;
     max-width: 90%;
     margin: 0 auto;
@@ -12,7 +25,9 @@
     text-align: center;
     background-color: #883a3a;
     width: 90%;
+    padding: 10px;
     color: #fff;
+    font-weight: bold;
 }
 
 .event-page{
@@ -20,4 +35,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.dropdown-header{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+  
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    width: 100%;
+}
+
+.search{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.break {
+    border: 5px; /* Remove the default border */
+    height: 8px; /* Set the height of the horizontal rule */
+    background-color: #fff; /* Set the color of the horizontal rule */
+    opacity: 1;
 }

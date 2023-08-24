@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style/events.css';
+import './style/eventTile.css';
 
 export default function EventTile({ Time, Image, Link, Majors, EdLvl, Industry, EmployType }) {
     const [countdown, setCountdown] = useState('');
@@ -47,21 +47,21 @@ export default function EventTile({ Time, Image, Link, Majors, EdLvl, Industry, 
             <div className='events-description-box'>
                 <div className='major-box'>
                     <h1 className='major-title'>Majors: </h1>
-                    <h1 className='majors'>{Majors}</h1>
+                    <h1 className='majors'>{Majors.join(', ')}</h1>
                 </div>
                 <div className='major-box'>
                     <h1 className='major-title'>Education Level:</h1>
-                    <h1 className='majors'>{EdLvl}</h1>
+                    <h1 className='majors'>{EdLvl.join(', ')}</h1>
                 </div>
                 <div className='major-box'>
                     <h1 className='major-title'>Industry:</h1>
-                    <h1 className='majors'>{Industry}</h1>
+                    <h1 className='majors'>{Industry.join(', ')}</h1>
                 </div>
                 <div className='major-box'>
                     <h1 className='major-title'>Employment Tag:</h1>
-                    <h1 className='majors'>{EmployType}</h1>
+                    <h1 className='majors'>{EmployType.join(', ')}</h1>
                 </div>
             </div>
         </div>
-    )
+    );
 }
