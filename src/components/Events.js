@@ -9,11 +9,11 @@ export default function Events() {
         {
             Time: '2023-09-06T22:17:00',
             Image: poster,
-            Link: 'https://us.pg.com/',
-            Majors: ['Chem E', 'IOE', 'Mech E'],
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLScgQq3re4OepaIbIn-AciVlm_OTxNnmZovmanD1GDmrMRmCgw/viewform',
+            Majors: ['All Majors'],
             EdLvl: ['Junior', 'Senior'],
-            Industry: ['Manufacturing', 'Health'],
-            EmployType: ['Internship'],
+            Industry: ['Consumer Goods'],
+            EmployType: ['Internship' , 'Full-Time'],
         },
     ];
 
@@ -28,9 +28,9 @@ export default function Events() {
     const [isEmployTypeDropdownVisible, setIsEmployTypeDropdownVisible] = useState(false);
 
     const filterOptions = {
-        majors: ['CS', 'IOE', 'CE', 'Mech E', 'Areo', 'Chem E', 'BME'],
+        majors: ['CS', 'IOE', 'CE', 'Mech E', 'Areo', 'Chem E', 'BME', 'Robotics', 'EE', 'All Majors'],
         edLvl: ['Freshman', 'Sophomore', 'Junior', 'Senior'],
-        industry: ['Big Tech', 'Health', 'Manufacturing', 'Consulting'],
+        industry: ['Big Tech', 'Health', 'Manufacturing', 'Consulting', 'Consumer Goods'],
         employType: ['Internship', 'Co-op', 'Full-Time'],
     };
 
@@ -45,6 +45,12 @@ export default function Events() {
     const handleCheckboxChange = (category, value, setSelectedState) => {
         setSelectedState(prevState => {
             console.log(`handleCheckboxChange - Category: ${category}, Value: ${value}`);
+
+            if (value === 'All Majors') {
+                // If "All Majors" is selected, set the state to all majors
+                return prevState.includes('All Majors') ? [] : filterOptions.majors;
+            }
+
             const updatedState = prevState.includes(value)
                 ? prevState.filter(item => item !== value)
                 : [...prevState, value];
