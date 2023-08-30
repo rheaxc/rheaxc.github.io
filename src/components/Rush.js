@@ -4,12 +4,12 @@ import Faq from './rush/FAQ.js';
 import Footer from './Footer.js'
 import '../style/rush.css'
 
-import website_graphic from '../images/rush/website-graphic.jpeg'
+import website_graphic from '../images/rush/f23-rush.png'
 import rush from '../images/footer/rush.jpg'
 
 const handleClick = () =>
 {
-  window.open("https://forms.gle/xT7E9WeYxUG5cLoA9")
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdkkBsNRStO4TpcSuEaEuqltBbucz5l7Ch2Q02OwVADmQ8Wtw/viewform")
 };
 
 class Rush extends React.Component {

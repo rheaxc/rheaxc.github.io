@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import poster from '../images/homepage/professional/2.jpg';
+import poster from '../images/events/PG.png';
 import '../style/events.css';
 import EventTile from './events/EventTile';
 
@@ -7,57 +7,12 @@ export default function Events() {
 
     const eventData = [
         {
-            Time: '2023-08-16T22:00:00',
+            Time: '2023-09-06T22:17:00',
             Image: poster,
-            Link: 'https://hariharanchidambaram.me',
-            Majors: ['CS', 'IOE', 'CE'],
+            Link: 'https://us.pg.com/',
+            Majors: ['Chem E', 'IOE', 'Mech E'],
             EdLvl: ['Junior', 'Senior'],
-            Industry: ['Big Tech', 'Consulting'],
-            EmployType: ['Internship'],
-        },
-        {
-            Time: '2023-09-16T22:00:00',
-            Image: poster,
-            Link: 'https://hariharanchidambaram.me',
-            Majors: ['Areo', 'Mech E'],
-            EdLvl: ['Junior', 'Senior'],
-            Industry: ['Big Tech', 'Consulting'],
-            EmployType: ['Internship', 'Full-Time'],
-        },
-        {
-            Time: '2023-10-16T22:00:00',
-            Image: poster,
-            Link: 'https://hariharanchidambaram.me',
-            Majors: ['Chem E', 'BME'],
-            EdLvl: ['Junior', 'Senior'],
-            Industry: ['Big Tech', 'Consulting'],
-            EmployType: ['Internship','Co-op'],
-        },
-        {
-            Time: '2023-11-16T22:00:00',
-            Image: poster,
-            Link: 'https://hariharanchidambaram.me',
-            Majors: ['CS', 'IOE', 'CE'],
-            EdLvl: ['Junior', 'Senior'],
-            Industry: ['Big Tech', 'Consulting'],
-            EmployType: ['Internship'],
-        },
-        {
-            Time: '2023-12-16T22:00:00',
-            Image: poster,
-            Link: 'https://hariharanchidambaram.me',
-            Majors: ['Areo', 'Mech E'],
-            EdLvl: ['Junior', 'Senior'],
-            Industry: ['Big Tech', 'Consulting'],
-            EmployType: ['Internship'],
-        },
-        {
-            Time: '2023-10-15T22:00:00',
-            Image: poster,
-            Link: 'https://hariharanchidambaram.me',
-            Majors: ['Chem E', 'BME'],
-            EdLvl: ['Junior', 'Senior'],
-            Industry: ['Big Tech', 'Consulting'],
+            Industry: ['Manufacturing', 'Health'],
             EmployType: ['Internship'],
         },
     ];
