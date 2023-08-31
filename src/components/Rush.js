@@ -4,7 +4,7 @@ import Faq from './rush/FAQ.js';
 import Footer from './Footer.js'
 import '../style/rush.css'
 
-import website_graphic from '../images/rush/f23-rush.png'
+import website_graphic from '../images/rush/f23-rush.jpeg'
 import rush from '../images/footer/rush.jpg'
 
 const handleClick = () =>
